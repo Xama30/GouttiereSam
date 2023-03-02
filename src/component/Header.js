@@ -1,4 +1,6 @@
 import logo from '../img/logo.webp';
+import { Link } from "react-router-dom";
+
 
 function Header () {
     return(
@@ -8,8 +10,8 @@ function Header () {
             </div>
             <div className="list-menu">
                 <ul>
-                    <li><a>Accueil</a></li>
-                    <li><a>Services</a></li>
+                    <li><Link to="/">Accueil</Link></li>
+                    <li><Link to="/Services">Services</Link></li>
                     <li><a>Réalisation</a></li>
                     <li><a>Contactez-Nous</a></li>
                 </ul>
@@ -24,4 +26,5 @@ function Header () {
         </header>
     );
 }
+
 export default Header;
