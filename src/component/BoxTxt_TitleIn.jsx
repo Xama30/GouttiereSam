@@ -1,6 +1,7 @@
 import "../App.css";
+import { Link } from "react-router-dom";
 
-function BoxTxtTitleIn({ color, title, texts, detail}) {
+function BoxTxtTitleIn({ color, title, texts, detail, route}) {
   let boxColor = "";
   let textColor = "white";
   let display = "";
@@ -24,7 +25,9 @@ function BoxTxtTitleIn({ color, title, texts, detail}) {
         {texts.map((text, index) => (
           <p key={index} style={{ color: textColor }}>{text}</p>
         ))}
-        <a style={{display: display}}>Voir en détails</a>
+        <div className="link__ContainerTitleIn">
+          <Link to={route} style={{display: display}}>Voir en détails</Link>
+        </div>
       </div>
     </div>
   );

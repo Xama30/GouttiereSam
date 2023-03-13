@@ -5,6 +5,7 @@ import TopMainPage from "../component/TopMainPage";
 import BoxTxtTitleIn from "../component/BoxTxt_TitleIn";
 import CardInfo from "../component/Card_Info";
 import NumBar from '../component/NumBar';
+import BorderTitle from '../component/BorderTitle';
 
 function Informations(){
     return(
@@ -39,6 +40,21 @@ function Informations(){
                     />
             </section>
             <NumBar/>
+            <div className='title__IG'>
+                <h2>Informations générales</h2>
+            </div>
+            <section id="Info__Gouttiere">
+                <BorderTitle
+                title="Quels sont les différents types de gouttières? "
+                text=" Il existe différents types de gouttières, chacun ayant ses avantages et ses inconvénients en termes de durabilité, de coûts, d'esthétique et de facilité d'installation et d'entretien. Que vous cherchiez une gouttière en aluminium, en cuivre, en acier galvanisé ou en PVC, il est important de choisir le type de gouttière qui convient le mieux à votre maison et à votre budget."
+                detail="T"/>
+                <BorderTitle
+                title="Quels sont les différents types de pare-feuilles? "
+                text="Les pare-feuilles de gouttière sont des accessoires utiles qui empêchent les feuilles, les débris et autres saletés de boucher vos gouttières. Ils peuvent également réduire le risque d'incendie en empêchant les feuilles sèches et autres matières combustibles de s'accumuler dans vos gouttières. Il existe différents types de pare-feuilles de gouttière, chacun avec ses propres avantages et inconvénients en termes de durabilité, de coûts et d'efficacité."
+                detail="T"/>
+            </section>
+
+
             <Footer/>
         </div>
     );
