@@ -1,0 +1,42 @@
+:root {
+    font-size: 62.5%;
+    --main-color-: #8FBC54;
+    --secondary-color-: #1D593B;
+    --padding-main-: calc(2rem + 6vw);
+    --h2-main-: calc(1.5rem + 1.7vmin);
+    --p-main-: calc(0.8rem + 1.3vmin);
+}
+/*#region   Card__Info */
+#Info__TCarte{
+    background-image: url("../img/carte-Info-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#Info__TCarte .card__Info:nth-child(2){
+    align-self: flex-end;
+}
+#Info__TCarte .card__Info{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.752);
+    padding: calc(2rem + 2vmin);
+}
+#Info__TCarte h2{
+    color: white;
+    font-size: var(--h2-main-);
+}
+#Info__TCarte p{
+    color: white;
+    font-size: var(--p-main-);
+    margin: calc(1rem + 1vmin) 0;
+}
+#Info__TCarte .detail__Info{
+    display: flex;
+    justify-content: flex-end;
+}
+#Info__TCarte a{
+    text-decoration: none;
+    color: white;
+    font-size: var(--p-main-);
+}
+/* #endregion */

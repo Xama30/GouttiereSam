@@ -31,11 +31,11 @@ header .list-menu {
     max-width: calc(60% + 20vw);
 }
 header ul li {
-    margin: 0 calc(1rem + 2vw);
+    margin: 0 calc(0.5rem + 0.8vw);
     position: relative;
     padding: 0 1rem;
     transition: all 0.5s ease;
-    font-size: calc(0.6rem + 1.3vw);
+    font-size: calc(0.6rem + 1.1vw);
 }
 header ul li a{
     text-decoration: none;
@@ -191,6 +191,28 @@ header .menu-hamburger .bar-2 {
     margin-left: 2vw;
 }
 /* #endregion */
+/*#region   BoxTxtTitleIn */
+.box__ContainerTitleIn{
+    margin: calc(2rem + 2vmin) 0;
+}
+.box__ContainerTitleIn h2{
+    font-size: var(--h2-main-);
+    margin-bottom: 1rem;
+    color: white;
+}
+.boxTxt__ContainerTitleIn{
+    padding: 2rem var(--padding-main-);
+}
+.box__ContainerTitleIn p{
+    font-size: calc(1rem + 1.5vmin);
+    margin: calc(1rem + 1vmin) 0;
+    margin-left: 2vw;
+}
+.box__ContainerTitleIn a{
+    font-size: calc(1rem + 1.5vmin);
+    color: white;
+}
+/* #endregion */
 /*#region   Card  */
 #section__carte{
     display: flex;
@@ -288,6 +310,69 @@ footer a:hover{
     color: var(--secondary-color-);
 }
 /*#endregion */
+/*#region   AccueilArticle  */
+#accueil__content {
+   background: var(--secondary-color-); 
+   padding: 70px var(--padding-main-);
+   display: flex;
+   color: white;
+}
+#accueil__content .accueil--texte h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(2rem + 2vw);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#accueil__content .accueil--texte p {
+    line-height: 231%;
+    font-size: calc(1rem + 0.67vw);
+    font-weight: 300;
+}
+/* #endregion */
+/*#region   TopMainPage */
+#TopMainPage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('./img/home-bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    padding: var(--padding-main-);
+}
+#TopMainPage h2{
+    font-size: var(--h2-main-);
+    color: white;
+}
+#TopMainPage p{
+    font-size: calc(0.6rem + 1vw);
+    color: white;
+    padding-left: calc(2rem + 2vmin);
+    margin: calc(2rem + 2vmin) 0;
+}
+#TopMainPage a{
+    font-size: var(--h2-main-);
+    color: white;
+}
+
+/* #endregion */
+/*#region   NumBar */
+    .bar{
+        background-color: #1D593B;
+        display: flex;
+        justify-content: center;
+    }
+    .bar p{
+        font-size: var(--h2-main-);
+        text-decoration: none;
+        color: white;
+    }
+    .bar a{
+        font-size: var(--h2-main-);
+        text-decoration: none;
+        color: white;
+    }
+/* #endregion */
+
+
+
+
 
 /*#region Media-900px */
 @media screen and (max-width: 900px) {
