@@ -7,6 +7,7 @@ import BoxTxtTitleIn from '../component/BoxTxt_TitleIn';
 import TexteArticleH2 from '../component/TexteArticleH2';
 import ListeArticleH3 from '../component/ListeArticleH3';
 import ListeArticleH2_H3_P from '../component/ListeArticleH2_H3_P';
+import NumBar from '../component/NumBar';
 
 function Quand(){
     const titresEtTextesH2 = [
@@ -41,6 +42,12 @@ function Quand(){
             detail="F"/>
 
             <ListeArticleH2_H3_P titreh2="Les facteurs extérieurs" itemLists={itemLists} />
+
+            <NumBar/>
+
+            <div className="imgBox--Article">
+              <img src={Images.carte2} alt="Une image de gouttière" />
+            </div>
 
             <Footer/>
         </div>

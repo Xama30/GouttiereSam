@@ -3,3 +3,10 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.imgBox--Article {
+    padding: 3rem var(--padding-main-);
+}
+.imgBox--Article img{
+    width: 100%;
+}

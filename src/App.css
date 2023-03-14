@@ -320,10 +320,15 @@ header .menu-hamburger .bar-2 {
     /*#endregion */
     /*#region   AccueilArticle  */
     #accueil__content {
-    background: var(--secondary-color-); 
-    padding: 70px var(--padding-main-);
-    display: flex;
-    color: white;
+        background: var(--secondary-color-); 
+        padding: 70px var(--padding-main-);
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #accueil__content .accueil--texte {
+        max-width: 55%;
     }
     #accueil__content .accueil--texte h1 {
         font-family: 'Roboto', sans-serif;
@@ -335,6 +340,14 @@ header .menu-hamburger .bar-2 {
         line-height: 231%;
         font-size: calc(1rem + 0.67vw);
         font-weight: 300;
+        margin-bottom: 1vmax;
+    }
+    #accueil__content .accueil-img {
+        position: relative;
+        max-width: 45%;
+    }
+    #accueil__content .accueil-img img {
+        width: 100%;
     }
     /* #endregion */
     /*#region   TopMainPage */
@@ -371,6 +384,7 @@ header .menu-hamburger .bar-2 {
             font-size: var(--h2-main-);
             text-decoration: none;
             color: white;
+            text-align: center;
         }
         .bar a{
             font-size: var(--h2-main-);
@@ -465,7 +479,44 @@ header .menu-hamburger .bar-2 {
         font-weight: 300;
     }
     /* #endregion */
-/* #endregion */
+    /*#region   ListeArticleH2_H3_P  */
+    .ListeArticleH3_H2__content {
+        padding: 4rem var(--padding-main-);
+    }
+    .ListeArticleH3_H2--titre {
+        font-size: var(--h2-main-);
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 2rem;
+        width: fit-content;
+    }
+    .ListeArticleH3_H2__content .ListeArticleH3_H2--titre:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 110%;
+        height: 4px;
+        background: var(--main-color-);
+    }
+    .ListeArticleH3_H2--liste {
+        padding-left: 2rem;
+    }
+    .ListeArticleH3_H2--item {
+        margin: 2rem 0;
+        font-size: var(--h3-main-);
+    }
+    .ListeArticleH3_H2--item h3 {
+        font-size: var(--h3-main-);
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .ListeArticleH3_H2--item p {
+        font-size: var(--p-main-);
+        font-weight: 300;
+    }
+    /* #endregion */
+    /* #endregion */
 
 
 
