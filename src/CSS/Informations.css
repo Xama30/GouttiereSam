@@ -1,0 +1,60 @@
+
+/*#region   Card__Info */
+#Info__TCarte{
+    background-image: url("../img/carte-Info-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#Info__TCarte .card__Info:nth-child(2){
+    align-self: flex-end;
+}
+#Info__TCarte .card__Info{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.752);
+    padding: calc(2rem + 2vmin)var(--padding-main-);
+}
+#Info__TCarte h2{
+    color: white;
+    font-size: var(--h2-main-);
+}
+#Info__TCarte p{
+    color: white;
+    font-size: var(--p-main-);
+    margin: calc(1rem + 1vmin) 0;
+}
+#Info__TCarte .detail__Info{
+    display: flex;
+    justify-content: flex-end;
+}
+#Info__TCarte a{
+    text-decoration: none;
+    color: white;
+    font-size: var(--p-main-);
+}
+/* #endregion */
+/*#region   Info__Gouttière */
+#Info__Gouttiere{
+    padding: 0 var(--padding-main-);
+}
+.title__IG{
+    background-color: #8FBC54;
+    display: flex;
+    justify-content: center;
+    margin-top: calc(3rem + 3vmin);
+}
+.title__IG h2{
+    font-size: var(--h2-main-);
+    color: white;
+    padding: calc(1rem + 1vmin);
+}
+
+/* #endregion */
+/*#region   Media-900px */
+@media screen and (max-width: 900px) {
+    #Info__TCarte .card__Info{
+        width: 100%;
+        margin: calc(2rem + 2vmin) 0;
+    }
+}
+/* #endregion */
