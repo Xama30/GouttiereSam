@@ -1,0 +1,22 @@
+/*#region   EntretientdeGouttière */
+.service__ImgC {
+  /* background-image: url(../img/carte1.jpg); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/img/pluie-qui-tombe-dans-une-gouttiere-dans-la-region-de-la-rive-sud.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#service__EntretienG h2 {
+  font-size: var(--h2-main-);
+  padding: calc(1rem + 1vmin) var(--padding-main-);
+}
+#service__EntretienG p {
+  font-size: var(--p-main-);
+}
+/* #endregion */
+
+.margin {
+  padding: 0 var(--padding-main-);
+}

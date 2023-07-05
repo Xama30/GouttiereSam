@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+  #comment__H2_p_imgf .p__imgF {
+    padding: var(--padding-main-) 0 !important;
+  }
+  #comment__H2_p_imgf .p__imgF p {
+    padding: calc(0.7rem + 0.7vmin) 0 !important;
+  }
+}
+#comment__H2_p_imgf h2 {
+  padding: calc(3rem + 3vmin) var(--padding-main-) calc(1rem + 1vmin);
+}

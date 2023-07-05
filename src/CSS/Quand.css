@@ -1,0 +1,73 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.imgBox--Article {
+  padding: 3rem var(--padding-main-);
+}
+.imgBox--Article img {
+  width: 100%;
+  max-height: 80vh;
+}
+#BorderTitle.paddingBorderTitle {
+  padding: 0 var(--padding-main-);
+}
+#BorderTitle h2 {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+#BorderTitle p {
+  padding: 0;
+}
+.title-list-img-frame {
+  display: flex;
+  padding: 3rem var(--padding-main-);
+  gap: 30px;
+  justify-content: space-between;
+}
+.title-list-img-frame .h2Article__content,
+.title-list-img-frame .ListeArticleH3__content {
+  padding: 0;
+  margin-bottom: 0;
+}
+.title-list-img-frame .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  max-width: 500px;
+}
+.title-list-img-frame .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* #region  Pourquoi */
+.img-container-pourquoi {
+  width: 100%;
+  padding: 0 var(--padding-main-);
+  max-height: 60vh;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.img-container-pourquoi img {
+  width: 100%;
+  object-fit: cover;
+}
+/* #endregion */
+@media screen and (max-width: 1200px) {
+  .title-list-img-frame {
+    flex-direction: column;
+  }
+  .title-list-img-frame .img-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title-list-img-frame .img-container {
+    display: flex;
+  }
+}

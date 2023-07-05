@@ -1,0 +1,111 @@
+#section__BoxTxtTitleIn {
+  margin: calc(6rem + 6vmin) calc(3rem + 3vmin);
+}
+/*#region   Card__Info */
+#Info__TCarte {
+  background-image: url("/img/carte-Info-bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+#Info__TCarte .card__Info:nth-child(2) {
+  align-self: flex-end;
+}
+#Info__TCarte .card__Info {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.752);
+  padding: calc(2rem + 2vmin) var(--padding-main-);
+}
+#Info__TCarte h2 {
+  color: white;
+  font-size: var(--h2-main-);
+}
+#Info__TCarte p {
+  color: white;
+  font-size: var(--p-main-);
+  margin: calc(1rem + 1vmin) 0;
+}
+#Info__TCarte .detail__Info {
+  display: flex;
+  justify-content: flex-end;
+}
+#Info__TCarte a {
+  text-decoration: none;
+  color: white;
+  font-size: var(--p-main-);
+}
+/* #endregion */
+#section__BoxTxtTitleIn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#section__BoxTxtTitleIn .section__BoxTxtTitleIn-content {
+  flex-grow: 1;
+}
+#section__BoxTxtTitleIn .img-container {
+  min-width: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+#section__BoxTxtTitleIn .img-container img {
+  height: auto;
+}
+/*#region   Info__Gouttière */
+#Info__Gouttiere {
+  padding: 0 var(--padding-main-);
+}
+.title__IG {
+  background-color: #8fbc54;
+  display: flex;
+  justify-content: center;
+  margin-top: calc(3rem + 3vmin);
+}
+.title__IG h2 {
+  font-size: var(--h2-main-);
+  color: white;
+  padding: calc(1rem + 1vmin);
+}
+#Info__Gouttiere .img-container {
+  display: flex;
+  justify-content: center;
+  max-height: 70vh;
+  margin-bottom: 5rem;
+}
+#Info__Gouttiere .img-container img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+/* #endregion */
+
+@media screen and (max-width: 1200px) {
+  #section__BoxTxtTitleIn {
+    flex-direction: column;
+  }
+  #section__BoxTxtTitleIn .img-container {
+    display: none;
+  }
+}
+/*#region   Media-900px */
+@media screen and (max-width: 900px) {
+  #Info__TCarte .card__Info {
+    width: 100%;
+    margin: calc(2rem + 2vmin) 0;
+  }
+  /*   .boxTxt__ContainerTitleIn.boxTxtIn_L h2,
+  .boxTxt__ContainerTitleIn.boxTxtIn_L p,
+  .boxTxt__ContainerTitleIn.boxTxtIn_L a {
+    color: black !important;
+  } */
+}
+/* #endregion */
+@media screen and (max-width: 500px) {
+  #section__BoxTxtTitleIn {
+    margin: calc(6rem + 4vmin) 0;
+  }
+  #section__BoxTxtTitleIn .img-container {
+    display: flex;
+  }
+}
