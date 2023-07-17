@@ -69,7 +69,7 @@ function Gestion() {
               <div className="title-list-container">
                 <TexteArticleH2 titresEtTextesH2={textConclusion}/>
                 <ListeArticleH3 titre="Pour plus d'informations sur l'entretien des gouttières, consultez nos autres articles :" listLinkItems={itemList} isLink={true} />
-                <p className='text-conclusion'>Si vous avez besoin d'aide pour l'entretien de vos gouttières, n'hésitez pas à <a href='https://entretiensgouttieresrivesud.ca/Contactez-nous'>nous contacter</a>. Nous proposons un large éventail de <a href='https://entretiensgouttieresrivesud.ca/Services'>services</a>, y compris le nettoyage, l'installation et la réparation de gouttières.</p>
+                <p className='text-conclusion'>Si vous avez besoin d'aide pour l'entretien de vos gouttières, n'hésitez pas à <a href='https://entretiensgouttieresrivesud.ca/Contactez-nous'>nous contacter</a>. Nous proposons un large éventail de <a href='https://entretiensgouttieresrivesud.ca/Nos-Services'>services</a>, y compris le nettoyage, l'installation et la réparation de gouttières.</p>
               </div>
               <div className="img-container">
                 <Image

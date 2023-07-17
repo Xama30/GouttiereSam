@@ -51,7 +51,7 @@ function Parefeuilles(){
                 title="Installation de pare-feuilles Rive-Sud"
                 texts={["Vous cherchez une entreprise fiable et expérimentée pour l'installation de pare-feuille dans la région de la Rive-Sud ? Ne cherchez plus ! Les Entretiens Grondin sont à votre service. Nous mettons notre expertise et notre savoir-faire à votre disposition pour vous garantir une prestation de qualité. Nous vous invitons à nous contacter pour obtenir une soumission gratuite ou pour prendre rendez-vous afin que nos experts puissent évaluer vos besoins et vous proposer une solution adaptée. Chez Les Entretiens Grondin, votre satisfaction est notre priorité !"]}
                 detail="T"
-                route="/Services"/>
+                route="/Nos-Services"/>
             <Soumission/>
             <BoxTxt
                 color="G"

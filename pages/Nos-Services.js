@@ -18,7 +18,7 @@ const Index = () => {
       <div id="P1">
         <Head>
           <title>Nos services d'entretien de gouttière - Rive-Sud</title>
-          <link rel="canonical" href="https://entretiensgouttieresrivesud.ca/Services" />
+          <link rel="canonical" href="https://entretiensgouttieresrivesud.ca/Nos-Services" />
           <meta name="description" content="Découvrez nos services de gouttières pour votre maison, y compris l'installation de protège gouttière, le nettoyage et la réparation. Notre équipe d'experts est là pour vous aider à maintenir vos gouttières en bon état et à prévenir les dommages potentiels à votre toit et votre maison. Contactez-nous pour en savoir plus sur nos services de gouttières professionnels. - Gouttière Rive-Sud" />
         </Head>
             <Header/>

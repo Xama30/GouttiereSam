@@ -10,7 +10,7 @@ function Soumission() {
           <p>Réponse dans un délai de 24h</p>
         </div>
         <div className="right">
-            <NextLink href="/Contactez-Nous">Cliquez ici</NextLink>
+            <NextLink href="/Contactez-nous">Cliquez ici</NextLink>
         </div>
       </div>
     </div>

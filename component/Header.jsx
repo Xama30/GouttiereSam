@@ -109,7 +109,7 @@ function Header() {
             <NextLink href="/Quand-nettoyer-ses-gouttieres">Quand?</NextLink>
           </li>
           <li className="dropdown-items">
-            <NextLink href="/pourquoi-entretenir-ses-gouttieres">Pourquoi?</NextLink>
+            <NextLink href="/Pourquoi-entretenir-ses-gouttieres">Pourquoi?</NextLink>
           </li>
           <li className="dropdown-items">
             <NextLink href="/Comment-nettoyer-ses-gouttieres">Comment?</NextLink>

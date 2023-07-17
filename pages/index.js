@@ -16,7 +16,7 @@ const CarteForm = dynamic(() => import('../component/Carte_Form'));
 
 const Index = () => {
   return (
-    <div>
+      <div>
       <Head>
         <title>Entretien de gouttières Grondin - Rive-Sud</title>
         <link rel="canonical" href="https://entretiensgouttieresrivesud.ca" />
@@ -68,7 +68,7 @@ const Index = () => {
             </div>
             <div className="right">
                 <VoirEnDt
-                link ="/Services"/>
+                link ="/Nos-Services"/>
             </div>
         </section>
 

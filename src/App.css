@@ -543,7 +543,7 @@ footer .facebook a:hover {
   padding: calc(var(--padding-main-) - 4vmin) var(--padding-main-);
   margin-top: var(--margin-header-);
 }
-#TopMainPage h2 {
+#TopMainPage h1 {
   font-size: var(--h2-main-);
   color: white;
 }
@@ -553,7 +553,7 @@ footer .facebook a:hover {
   padding-left: calc(2rem + 2vmin);
   margin: calc(2rem + 2vmin) 0;
 }
-#TopMainPage h3 {
+#TopMainPage h2 {
   font-size: var(--h2-main-);
   color: white;
 }
