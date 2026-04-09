@@ -31,7 +31,7 @@ function Pourquoi() {
         <title key="title">{t("nextPages.pourquoi.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Pourquoi-entretenir-ses-gouttieres"
+          href="https://entretiensgouttieresrivesud.ca/pourquoi-entretenir-ses-gouttieres"
           key="canonical"
         />
         <meta

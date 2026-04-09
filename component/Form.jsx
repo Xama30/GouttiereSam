@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
 
@@ -6,6 +6,11 @@ function Form() {
   const { t } = useNextI18n();
 
   const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState({
+    type: "idle",
+    message: "",
+  });
 
   // fonction de validation de l'email
   const validateEmail = (email) => {
@@ -13,47 +18,55 @@ function Form() {
     return re.test(email);
   };
 
-  const sendEmail = (e) => {
+  const clearFormFields = () => {
+    form.current.user_name.value = "";
+    form.current.user_email.value = "";
+    form.current.user_number.value = "";
+    form.current.message.value = "";
+    form.current.Adresse.value = "";
+    form.current.Ville.value = "";
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    // Récupérer la valeur de l'e-mail et du numéro de téléphone
+    // Récuperer la valeur de l'e-mail
     const userEmail = form.current.user_email.value.trim();
 
-    // valider l'email avant l'envoi
+    // Valider l'email avant l'envoi
     if (!validateEmail(userEmail)) {
-      alert(t("components.form.invalidEmail"));
+      setFeedback({
+        type: "error",
+        message: t("components.form.invalidEmail"),
+      });
       return;
     }
 
-    emailjs
-      .sendForm(
+    setIsSubmitting(true);
+    setFeedback({ type: "idle", message: "" });
+
+    try {
+      await emailjs.sendForm(
         "service_jhcswgq",
         "template_u1b0xft",
         form.current,
         "aFJ-p0FX1BN0fju-6",
-      )
-      .then(
-        (result) => {
-          // Nettoyer les champs suite à l'envoi réussi
-          form.current.user_name.value = "";
-          form.current.user_email.value = "";
-          form.current.user_number.value = "";
-          form.current.message.value = "";
-          form.current.Adresse.value = "";
-          form.current.Ville.value = "";
-
-          // Afficher un petit message indiquant que l'e-mail a bien été envoyé
-          const sentMessage = document.createElement("div");
-          sentMessage.textContent = t("components.form.sent");
-          sentMessage.style.color = "green";
-          form.current.appendChild(sentMessage);
-
-          setTimeout(() => {
-            sentMessage.style.display = "none";
-          }, 5000);
-        },
-        (error) => {},
       );
+
+      clearFormFields();
+      setFeedback({
+        type: "success",
+        message: t("components.form.sent"),
+      });
+    } catch (error) {
+      console.error("EmailJS send failed:", error);
+      setFeedback({
+        type: "error",
+        message: t("components.form.sendFailed"),
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -116,8 +129,22 @@ function Form() {
         <input
           className="send"
           type="submit"
-          value={t("components.form.submit")}
+          value={
+            isSubmitting
+              ? t("components.form.sending")
+              : t("components.form.submit")
+          }
+          disabled={isSubmitting}
         />
+        {feedback.message ? (
+          <p
+            className={`form-feedback ${feedback.type === "error" ? "is-error" : "is-success"}`}
+            role="status"
+            aria-live="polite"
+          >
+            {feedback.message}
+          </p>
+        ) : null}
       </form>
     </div>
   );

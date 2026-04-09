@@ -26,7 +26,7 @@ function TypesGouttieres() {
         <title key="title">{t("nextPages.types.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Les-differents-types-de-gouttieres"
+          href="https://entretiensgouttieresrivesud.ca/les-differents-types-de-gouttieres"
           key="canonical"
         />
         <meta

@@ -31,7 +31,7 @@ function Gestion() {
         <title key="title">{t("nextPages.gestion.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Gestion-de-vos-gouttieres"
+          href="https://entretiensgouttieresrivesud.ca/gestion-de-vos-gouttieres"
           key="canonical"
         />
         <meta
@@ -71,11 +71,11 @@ function Gestion() {
             />
             <p className="text-conclusion">
               {t("nextPages.gestion.helpStart")}{" "}
-              <a href="https://entretiensgouttieresrivesud.ca/Contactez-nous">
+              <a href="https://entretiensgouttieresrivesud.ca/contactez-nous">
                 {t("nextPages.gestion.helpContactLabel")}
               </a>
               {t("nextPages.gestion.helpMiddle")}{" "}
-              <a href="https://entretiensgouttieresrivesud.ca/Nos-Services">
+              <a href="https://entretiensgouttieresrivesud.ca/nos-services">
                 {t("nextPages.gestion.helpServicesLabel")}
               </a>
               {t("nextPages.gestion.helpEnd")}

@@ -37,7 +37,7 @@ function Quand() {
         <title key="title">{t("nextPages.quand.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Quand-nettoyer-ses-gouttieres"
+          href="https://entretiensgouttieresrivesud.ca/quand-nettoyer-ses-gouttieres"
           key="canonical"
         />
         <meta
@@ -100,7 +100,7 @@ function Quand() {
         title={t("nextPages.quand.borderTitle")}
         text={t("nextPages.quand.borderText")}
         detail="T"
-        link="/Tout-savoir-sur-les-pare-feuilles"
+        link="/tout-savoir-sur-les-pare-feuilles"
         className="paddingBorderTitle"
       />
 

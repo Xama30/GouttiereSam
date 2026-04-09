@@ -144,6 +144,21 @@ form {
 .form .send:hover {
   cursor: pointer;
 }
+.form .send:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.form .form-feedback {
+  margin: 0.8rem 0 0;
+  font-size: calc(var(--p-main-) - 0.2rem);
+  line-height: 1.5;
+}
+.form .form-feedback.is-success {
+  color: #1d593b;
+}
+.form .form-feedback.is-error {
+  color: #b42318;
+}
 
 /* #endregion */
 

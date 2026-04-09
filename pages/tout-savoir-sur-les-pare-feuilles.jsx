@@ -34,7 +34,7 @@ function Parefeuilles() {
         />
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Tout-savoir-sur-les-pare-feuilles"
+          href="https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-pare-feuilles"
           key="canonical"
         />
       </Head>
@@ -50,7 +50,7 @@ function Parefeuilles() {
         title={t("nextPages.pareFeuilles.installationTitle")}
         texts={get("nextPages.pareFeuilles.installationTexts", [])}
         detail="T"
-        route="/Nos-Services"
+        route="/nos-services"
       />
       <Soumission />
       <BoxTxt

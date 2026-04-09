@@ -26,7 +26,7 @@ function Comment() {
         <title key="title">{t("nextPages.comment.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Comment-nettoyer-ses-gouttieres"
+          href="https://entretiensgouttieresrivesud.ca/comment-nettoyer-ses-gouttieres"
           key="canonical"
         />
         <meta

@@ -2,6 +2,14 @@
   padding: var(--padding-main-);
 }
 
+#P2 h2,
+#P2 p,
+#Realisation .realisation-item__city,
+#Realisation .realisation-item__title,
+#Realisation .realisation-item__description {
+  font-family: var(--font-main-);
+}
+
 #Realisation .works {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -29,22 +37,16 @@
 #Realisation .realisation-item__content {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
-  padding: 1rem 1rem 1.2rem;
-  min-height: 220px;
+  gap: 0.9rem;
+  padding: 1.35rem 1.25rem 1.5rem;
 }
 
 #Realisation .realisation-item__title {
-  font-size: calc(var(--h2-main-) - 0.55rem);
-  line-height: 1.2;
+  font-size: clamp(1.9rem, 1.25rem + 1vmin, 2.35rem);
+  font-weight: 600;
+  line-height: 1.35;
   color: #102f2f;
   margin: 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  overflow: hidden;
-  min-height: calc(1.2em * 3);
 }
 
 #Realisation .realisation-item__city {
@@ -59,15 +61,12 @@
 }
 
 #Realisation .realisation-item__description {
+  font-size: var(--p-main-);
+  font-weight: 300;
   color: #223736;
   line-height: 1.65;
   text-align: left;
   margin: 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  line-clamp: 5;
-  overflow: hidden;
 }
 
 .Top__ContactUs {
@@ -89,8 +88,12 @@
 }
 
 @media (max-width: 500px) {
-  #Realisation .realisation-item__content {
-    min-height: 200px;
+  #Realisation .realisation-item__title {
+    font-size: clamp(1.7rem, 1.3rem + 1.15vmin, 2.05rem);
+  }
+
+  #Realisation .realisation-item__description {
+    font-size: calc(var(--p-main-) - 0.1rem);
   }
 
   #Realisation .realisation-item__city {

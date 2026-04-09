@@ -2,31 +2,31 @@ import { resolveLang } from "./next-i18n";
 
 export const coreRoutes = {
   home: { fr: "", en: "" },
-  services: { fr: "Nos-Services", en: "services" },
-  contact: { fr: "Contactez-nous", en: "contact" },
-  faq: { fr: "FAQ", en: "faq" },
-  portfolio: { fr: "Realisation", en: "projects" },
+  services: { fr: "nos-services", en: "services" },
+  contact: { fr: "contactez-nous", en: "contact" },
+  faq: { fr: "faq", en: "faq" },
+  portfolio: { fr: "realisation", en: "projects" },
 };
 
 const informationRoutes = {
   gutterTypes: {
-    fr: "Les-differents-types-de-gouttieres",
+    fr: "les-differents-types-de-gouttieres",
     en: "gutter-types",
   },
   whenToCleanGutters: {
-    fr: "Quand-nettoyer-ses-gouttieres",
+    fr: "quand-nettoyer-ses-gouttieres",
     en: "when-to-clean-gutters",
   },
   whyMaintainGutters: {
-    fr: "Pourquoi-entretenir-ses-gouttieres",
+    fr: "pourquoi-entretenir-ses-gouttieres",
     en: "why-maintain-gutters",
   },
   howToCleanGutters: {
-    fr: "Comment-nettoyer-ses-gouttieres",
+    fr: "comment-nettoyer-ses-gouttieres",
     en: "how-to-clean-gutters",
   },
   gutterMaintenanceGuide: {
-    fr: "Gestion-de-vos-gouttieres",
+    fr: "gestion-de-vos-gouttieres",
     en: "gutter-maintenance-guide",
   },
 };

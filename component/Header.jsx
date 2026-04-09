@@ -45,12 +45,12 @@ function Header() {
           { href: faqHref, key: "faq" },
         ]
       : [
-          { href: "/Tout-savoir-sur-les-gouttieres", key: "gutterTypes" },
-          { href: "/Tout-savoir-sur-les-pare-feuilles", key: "leafGuards" },
-          { href: "/Quand-nettoyer-ses-gouttieres", key: "whenToClean" },
-          { href: "/Pourquoi-entretenir-ses-gouttieres", key: "whyMaintain" },
-          { href: "/Comment-nettoyer-ses-gouttieres", key: "howToClean" },
-          { href: "/Gestion-de-vos-gouttieres", key: "fullGuide" },
+          { href: "/tout-savoir-sur-les-gouttieres", key: "gutterTypes" },
+          { href: "/tout-savoir-sur-les-pare-feuilles", key: "leafGuards" },
+          { href: "/quand-nettoyer-ses-gouttieres", key: "whenToClean" },
+          { href: "/pourquoi-entretenir-ses-gouttieres", key: "whyMaintain" },
+          { href: "/comment-nettoyer-ses-gouttieres", key: "howToClean" },
+          { href: "/gestion-de-vos-gouttieres", key: "fullGuide" },
           { href: faqHref, key: "faq" },
         ];
 
@@ -223,7 +223,6 @@ function Header() {
           <li className="lang-toggle">
             <NextLink
               href={languageTargets.fr}
-              locale="fr-CA"
               className={lang !== "en" ? "lang-current" : ""}
             >
               {t("header.language.fr")}
@@ -231,7 +230,6 @@ function Header() {
             <span>/</span>
             <NextLink
               href={languageTargets.en}
-              locale="en"
               className={lang === "en" ? "lang-current" : ""}
             >
               {t("header.language.en")}
@@ -307,7 +305,6 @@ function Header() {
           <li className="lang-toggle">
             <NextLink
               href={languageTargets.fr}
-              locale="fr-CA"
               className={lang !== "en" ? "lang-current" : ""}
               onClick={closeMobileMenu}
             >
@@ -316,7 +313,6 @@ function Header() {
             <span>/</span>
             <NextLink
               href={languageTargets.en}
-              locale="en"
               className={lang === "en" ? "lang-current" : ""}
               onClick={closeMobileMenu}
             >

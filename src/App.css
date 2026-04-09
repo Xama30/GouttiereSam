@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-main-);
 }
 :root {
   font-size: 62.5%;
+  --font-main-: "Poppins", sans-serif;
   --main-color-: #8fbc54;
   --secondary-color-: #1d593b;
   --padding-main-: calc(2rem + 6vw);
@@ -83,11 +84,15 @@ header .menu li a {
   display: none;
 }
 .lang-toggle a {
-  font-weight: 600;
+  font-family: var(--font-main-);
+}
+.lang-toggle span {
+  font-family: var(--font-main-);
 }
 .lang-toggle .lang-current {
   color: var(--secondary-color-);
-  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 header .menu li:hover {
   cursor: pointer;
@@ -1094,6 +1099,7 @@ footer .facebook a:hover {
   z-index: 4;
   background: #1d593b;
   color: white;
+  font-family: var(--font-main-);
   font-size: 0.9rem;
   font-weight: 700;
   padding: 0.28rem 0.72rem;

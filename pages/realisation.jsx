@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { useRouter } from "next/router";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
 import {
   longueuilBefore,
@@ -34,10 +33,9 @@ const BeforeAfterSlider = dynamic(
 const NumBar = dynamic(() => import("../component/NumBar"));
 
 function Realisation() {
-  const { t, get } = useNextI18n();
-  const router = useRouter();
-  const isEnglish = router.locale === "en";
-  const canonicalPath = isEnglish ? "/projects" : "/Realisation";
+  const { t, get, lang } = useNextI18n();
+  const isEnglish = lang === "en";
+  const canonicalPath = isEnglish ? "/projects" : "/realisation";
 
   const sliderPairs = [
     { beforeImage: longueuilBefore.src, afterImage: longueuilAfter.src },
@@ -57,8 +55,8 @@ function Realisation() {
     ? localizedItems.slice(0, sliderPairs.length)
     : [];
 
-  const beforeLabel = router.locale === "en" ? "Before" : "Avant";
-  const afterLabel = router.locale === "en" ? "After" : "Après";
+  const beforeLabel = isEnglish ? "Before" : "Avant";
+  const afterLabel = isEnglish ? "After" : "Après";
 
   return (
     <div>

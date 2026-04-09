@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { useRouter } from "next/router";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
 
 const Animation = dynamic(() => import("../component/Animation"));
@@ -26,8 +25,7 @@ const CITY_LABELS = {
 };
 
 function CityPage({ citySlug }) {
-  const router = useRouter();
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
 
   const cityName = CITY_LABELS[citySlug] || citySlug;
   const cityData = get(`cities.${citySlug}`, null);
@@ -36,7 +34,7 @@ function CityPage({ citySlug }) {
     cityData?.meta_description || t("seo.city.description", { city: cityName });
 
   const siteUrl = "https://entretiensgouttieresrivesud.ca";
-  const locale = router.locale || "fr-CA";
+  const locale = lang === "en" ? "en" : "fr-CA";
   const currentPath = `/${citySlug}`;
   const canonical = `${siteUrl}${locale === "en" ? `/en${currentPath}` : currentPath}`;
   const frAlt = `${siteUrl}${currentPath}`;
@@ -50,14 +48,14 @@ function CityPage({ citySlug }) {
 
   const faqQuestion =
     cityData?.faq_q1 ||
-    (locale === "en"
+    (lang === "en"
       ? "Local frequently asked question"
       : "Question fréquente locale");
   const faqAnswer =
     cityData?.faq_a1 || t("page.city.sectionText", { city: cityName });
   const detailedProcessTitle =
     cityData?.detailed_process_title ||
-    (locale === "en"
+    (lang === "en"
       ? `Our gutter cleaning process in ${cityName}`
       : `Notre méthode de nettoyage de gouttières à ${cityName}`);
   const detailedProcess =
@@ -124,7 +122,7 @@ function CityPage({ citySlug }) {
         <section id="section__BoxTxt">
           <BoxTxt
             color="G"
-            title={locale === "en" ? "Local expertise" : "Expertise locale"}
+            title={lang === "en" ? "Local expertise" : "Expertise locale"}
             texts={[
               cityData?.local_expertise ||
                 t("page.city.sectionText", { city: cityName }),
@@ -164,7 +162,18 @@ function CityPage({ citySlug }) {
   );
 }
 
-export function getServerSideProps({ params }) {
+export function getStaticPaths() {
+  const paths = Object.keys(CITY_LABELS).map((city) => ({
+    params: { city },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export function getStaticProps({ params }) {
   const citySlug = (params?.city || "").toLowerCase();
 
   if (!Object.prototype.hasOwnProperty.call(CITY_LABELS, citySlug)) {

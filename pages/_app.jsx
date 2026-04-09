@@ -19,83 +19,81 @@ const MyApp = ({ Component, pageProps }) => {
   const rawPath = router.asPath.split("?")[0].split("#")[0];
   const currentPath =
     rawPath === "/en" ? "/" : rawPath.replace(/^\/en(?=\/|$)/, "") || "/";
-  const locale = router.locale || "fr-CA";
+  const locale =
+    pageProps?.locale ||
+    (rawPath === "/en" || rawPath.startsWith("/en/") ? "en" : "fr-CA");
   const lang = resolveLang(locale);
   const { t } = getI18n(lang);
-  const isEnglishPage = locale === "en";
+  const isEnglishPage = lang === "en";
   const localizedPath = `${isEnglishPage ? "/en" : ""}${currentPath === "/" ? "" : currentPath}`;
   const canonicalUrl = `${siteUrl}${localizedPath}`;
   const routeAlternates = {
-    "/Nos-Services": {
-      fr: "/Nos-Services",
+    "/nos-services": {
+      fr: "/nos-services",
       en: "/services",
     },
     "/services": {
-      fr: "/Nos-Services",
+      fr: "/nos-services",
       en: "/services",
     },
-    "/Contactez-nous": {
-      fr: "/Contactez-nous",
+    "/contactez-nous": {
+      fr: "/contactez-nous",
       en: "/contact",
     },
     "/contact": {
-      fr: "/Contactez-nous",
+      fr: "/contactez-nous",
       en: "/contact",
     },
-    "/FAQ": {
-      fr: "/FAQ",
-      en: "/faq",
-    },
     "/faq": {
-      fr: "/FAQ",
+      fr: "/faq",
       en: "/faq",
     },
-    "/Realisation": {
-      fr: "/Realisation",
+    "/realisation": {
+      fr: "/realisation",
       en: "/projects",
     },
     "/projects": {
-      fr: "/Realisation",
+      fr: "/realisation",
       en: "/projects",
     },
-    "/Pourquoi-entretenir-ses-gouttieres": {
-      fr: "/Pourquoi-entretenir-ses-gouttieres",
+    "/pourquoi-entretenir-ses-gouttieres": {
+      fr: "/pourquoi-entretenir-ses-gouttieres",
       en: "/why-maintain-gutters",
     },
     "/why-maintain-gutters": {
-      fr: "/Pourquoi-entretenir-ses-gouttieres",
+      fr: "/pourquoi-entretenir-ses-gouttieres",
       en: "/why-maintain-gutters",
     },
-    "/Quand-nettoyer-ses-gouttieres": {
-      fr: "/Quand-nettoyer-ses-gouttieres",
+    "/quand-nettoyer-ses-gouttieres": {
+      fr: "/quand-nettoyer-ses-gouttieres",
       en: "/when-to-clean-gutters",
     },
     "/when-to-clean-gutters": {
-      fr: "/Quand-nettoyer-ses-gouttieres",
+      fr: "/quand-nettoyer-ses-gouttieres",
       en: "/when-to-clean-gutters",
     },
-    "/Comment-nettoyer-ses-gouttieres": {
-      fr: "/Comment-nettoyer-ses-gouttieres",
+    "/comment-nettoyer-ses-gouttieres": {
+      fr: "/comment-nettoyer-ses-gouttieres",
       en: "/how-to-clean-gutters",
     },
     "/how-to-clean-gutters": {
-      fr: "/Comment-nettoyer-ses-gouttieres",
+      fr: "/comment-nettoyer-ses-gouttieres",
       en: "/how-to-clean-gutters",
     },
-    "/Gestion-de-vos-gouttieres": {
-      fr: "/Gestion-de-vos-gouttieres",
+    "/gestion-de-vos-gouttieres": {
+      fr: "/gestion-de-vos-gouttieres",
       en: "/gutter-maintenance-guide",
     },
     "/gutter-maintenance-guide": {
-      fr: "/Gestion-de-vos-gouttieres",
+      fr: "/gestion-de-vos-gouttieres",
       en: "/gutter-maintenance-guide",
     },
-    "/Les-differents-types-de-gouttieres": {
-      fr: "/Les-differents-types-de-gouttieres",
+    "/les-differents-types-de-gouttieres": {
+      fr: "/les-differents-types-de-gouttieres",
       en: "/gutter-types",
     },
     "/gutter-types": {
-      fr: "/Les-differents-types-de-gouttieres",
+      fr: "/les-differents-types-de-gouttieres",
       en: "/gutter-types",
     },
   };
@@ -110,7 +108,7 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.index.headTitle",
       descriptionKey: "nextPages.index.headDescription",
     },
-    "/Nos-Services": {
+    "/nos-services": {
       titleKey: "nextPages.services.headTitle",
       descriptionKey: "nextPages.services.headDescription",
     },
@@ -118,7 +116,7 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.services.headTitle",
       descriptionKey: "nextPages.services.headDescription",
     },
-    "/Contactez-nous": {
+    "/contactez-nous": {
       titleKey: "nextPages.contact.headTitle",
       descriptionKey: "nextPages.contact.headDescription",
     },
@@ -126,15 +124,11 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.contact.headTitle",
       descriptionKey: "nextPages.contact.headDescription",
     },
-    "/FAQ": {
-      titleKey: "nextPages.faq.headTitle",
-      descriptionKey: "nextPages.faq.headDescription",
-    },
     "/faq": {
       titleKey: "nextPages.faq.headTitle",
       descriptionKey: "nextPages.faq.headDescription",
     },
-    "/Realisation": {
+    "/realisation": {
       titleKey: "nextPages.realisation.headTitle",
       descriptionKey: "nextPages.realisation.headDescription",
     },
@@ -142,7 +136,7 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.realisation.headTitle",
       descriptionKey: "nextPages.realisation.headDescription",
     },
-    "/Pourquoi-entretenir-ses-gouttieres": {
+    "/pourquoi-entretenir-ses-gouttieres": {
       titleKey: "nextPages.pourquoi.headTitle",
       descriptionKey: "nextPages.pourquoi.headDescription",
     },
@@ -150,7 +144,7 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.pourquoi.headTitle",
       descriptionKey: "nextPages.pourquoi.headDescription",
     },
-    "/Quand-nettoyer-ses-gouttieres": {
+    "/quand-nettoyer-ses-gouttieres": {
       titleKey: "nextPages.quand.headTitle",
       descriptionKey: "nextPages.quand.headDescription",
     },
@@ -158,7 +152,7 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.quand.headTitle",
       descriptionKey: "nextPages.quand.headDescription",
     },
-    "/Comment-nettoyer-ses-gouttieres": {
+    "/comment-nettoyer-ses-gouttieres": {
       titleKey: "nextPages.comment.headTitle",
       descriptionKey: "nextPages.comment.headDescription",
     },
@@ -166,7 +160,7 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.comment.headTitle",
       descriptionKey: "nextPages.comment.headDescription",
     },
-    "/Gestion-de-vos-gouttieres": {
+    "/gestion-de-vos-gouttieres": {
       titleKey: "nextPages.gestion.headTitle",
       descriptionKey: "nextPages.gestion.headDescription",
     },
@@ -174,7 +168,7 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.gestion.headTitle",
       descriptionKey: "nextPages.gestion.headDescription",
     },
-    "/Les-differents-types-de-gouttieres": {
+    "/les-differents-types-de-gouttieres": {
       titleKey: "nextPages.types.headTitle",
       descriptionKey: "nextPages.types.headDescription",
     },
@@ -182,11 +176,11 @@ const MyApp = ({ Component, pageProps }) => {
       titleKey: "nextPages.types.headTitle",
       descriptionKey: "nextPages.types.headDescription",
     },
-    "/Tout-savoir-sur-les-gouttieres": {
+    "/tout-savoir-sur-les-gouttieres": {
       titleKey: "nextPages.infoGouttieres.headTitle",
       descriptionKey: "nextPages.infoGouttieres.headDescription",
     },
-    "/Tout-savoir-sur-les-pare-feuilles": {
+    "/tout-savoir-sur-les-pare-feuilles": {
       titleKey: "nextPages.pareFeuilles.headTitle",
       descriptionKey: "nextPages.pareFeuilles.headDescription",
     },

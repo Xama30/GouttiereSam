@@ -26,7 +26,7 @@ function ContactUs() {
         <title key="title">{t("nextPages.contact.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Contactez-nous"
+          href="https://entretiensgouttieresrivesud.ca/contactez-nous"
           key="canonical"
         />
         <meta

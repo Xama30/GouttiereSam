@@ -23,7 +23,7 @@ const Index = () => {
         <title key="title">{t("nextPages.services.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Nos-Services"
+          href="https://entretiensgouttieresrivesud.ca/nos-services"
           key="canonical"
         />
         <meta
@@ -56,7 +56,7 @@ const Index = () => {
             title={t("nextPages.services.guardTitle")}
             text={t("nextPages.services.guardText")}
             detail="T"
-            link="/Tout-savoir-sur-les-pare-feuilles"
+            link="/tout-savoir-sur-les-pare-feuilles"
           />
         </section>
         <NumBar />

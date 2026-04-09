@@ -29,7 +29,7 @@ function FAQ() {
         <title key="title">{t("nextPages.faq.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/FAQ"
+          href="https://entretiensgouttieresrivesud.ca/faq"
           key="canonical"
         />
         <meta

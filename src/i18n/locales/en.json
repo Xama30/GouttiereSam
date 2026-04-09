@@ -162,6 +162,8 @@
     "form": {
       "invalidEmail": "Please enter a valid email address",
       "sent": "Message sent successfully!",
+      "sendFailed": "Unable to send right now. Please call us at 1-819-237-9813 or email us at entretiensgrondin@hotmail.com.",
+      "sending": "Sending...",
       "fullName": "Full Name",
       "phone": "Phone",
       "email": "Email",
@@ -707,15 +709,15 @@
       "itemList": [
         {
           "text": "Everything you need to know about leaf guards",
-          "link": "https://entretiensgouttieresrivesud.ca/Tout-savoir-sur-les-pare-feuilles"
+          "link": "https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-pare-feuilles"
         },
         {
           "text": "When to clean your gutters",
-          "link": "https://entretiensgouttieresrivesud.ca/Quand-nettoyer-ses-gouttieres"
+          "link": "https://entretiensgouttieresrivesud.ca/quand-nettoyer-ses-gouttieres"
         },
         {
           "text": "Why maintain your gutters",
-          "link": "https://entretiensgouttieresrivesud.ca/Pourquoi-entretenir-ses-gouttieres"
+          "link": "https://entretiensgouttieresrivesud.ca/pourquoi-entretenir-ses-gouttieres"
         }
       ],
       "helpStart": "If you need help with gutter maintenance, feel free to",
@@ -773,26 +775,26 @@
         {
           "title": "Risks of cleaning gutters yourself",
           "text": "Gutter cleaning can be dangerous, especially without the right equipment or training. Risks include falls, electric hazards, and injuries related to ladder work.",
-          "route": "/Comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres"
         },
         {
           "title": "Why hire an expert?",
           "text": "Hiring an expert ensures a complete and safe cleaning process while extending the life of your drainage system through professional maintenance.",
-          "route": "/Comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres"
         },
         {
           "title": "Cleaning gutters on your own",
           "text": "DIY gutter cleaning can lead to injuries or property damage and may still fail to provide a complete and effective result.",
-          "route": "/Comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres"
         }
       ],
       "generalInfoTitle": "General information",
       "guttersTitle": "What are the different gutter types?",
       "guttersText": "There are several gutter types, each with advantages and limitations related to durability, cost, appearance, installation, and upkeep. Whether you are considering aluminum, copper, galvanized steel, or PVC, choosing the right option for your home and budget is important.",
-      "guttersLink": "/Les-differents-types-de-gouttieres",
+      "guttersLink": "/les-differents-types-de-gouttieres",
       "guardsTitle": "What are the different leaf-guard types?",
       "guardsText": "Gutter leaf guards help prevent leaves and debris from clogging your system. They can also reduce fire risk by limiting dry buildup in gutters. Different guard types offer different levels of durability, cost, and efficiency.",
-      "guardsLink": "/Tout-savoir-sur-les-pare-feuilles",
+      "guardsLink": "/tout-savoir-sur-les-pare-feuilles",
       "bottomImageAlt": "Metal gutter guard system on the South Shore retaining tree debris"
     },
     "pareFeuilles": {

@@ -30,7 +30,7 @@ function Informations() {
         />
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Tout-savoir-sur-les-gouttieres"
+          href="https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-gouttieres"
           key="canonical"
         />
       </Head>
@@ -47,14 +47,14 @@ function Informations() {
             texts={get("nextPages.infoGouttieres.whyTexts", [])}
             detail="T"
             className="boxTxtIn_L"
-            route="/Pourquoi-entretenir-ses-gouttieres"
+            route="/pourquoi-entretenir-ses-gouttieres"
           />
           <BoxTxtTitleIn
             color="G"
             title={t("nextPages.infoGouttieres.whenTitle")}
             texts={get("nextPages.infoGouttieres.whenTexts", [])}
             detail="T"
-            route="/Quand-nettoyer-ses-gouttieres"
+            route="/quand-nettoyer-ses-gouttieres"
           />
         </div>
         <div className="img-container">
