@@ -1,7 +1,7 @@
 /*#region   EntretientdeGouttière */
 .service__ImgC {
-  /* background-image: url(../img/carte1.jpg); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/img/pluie-qui-tombe-dans-une-gouttiere-dans-la-region-de-la-rive-sud.jpg");
   background-size: cover;
   background-position: bottom;

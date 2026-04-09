@@ -4,18 +4,26 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
 import {
-  avant1,
-  avant2,
-  avant3,
-  avant4,
-  avant5,
-  avant6,
-  apres1,
-  apres2,
-  apres3,
-  apres4,
-  apres5,
-  apres6,
+  longueuilBefore,
+  longueuilAfter,
+  brossardBefore,
+  brossardAfter,
+  bouchervilleBefore,
+  bouchervilleAfter,
+  saintBrunoBefore,
+  saintBrunoAfter,
+  candiacBefore,
+  candiacAfter,
+  saintLambertBefore,
+  saintLambertAfter,
+  laPrairieBefore,
+  laPrairieAfter,
+  chamblyBefore,
+  chamblyAfter,
+  sainteJulieBefore,
+  sainteJulieAfter,
+  beloeilBefore,
+  beloeilAfter,
 } from "../public/img/Slider";
 
 const Header = dynamic(() => import("../component/Header"));
@@ -28,14 +36,20 @@ const NumBar = dynamic(() => import("../component/NumBar"));
 function Realisation() {
   const { t, get } = useNextI18n();
   const router = useRouter();
+  const isEnglish = router.locale === "en";
+  const canonicalPath = isEnglish ? "/projects" : "/Realisation";
 
   const sliderPairs = [
-    { beforeImage: avant1.src, afterImage: apres1.src },
-    { beforeImage: avant2.src, afterImage: apres2.src },
-    { beforeImage: avant3.src, afterImage: apres3.src },
-    { beforeImage: avant4.src, afterImage: apres4.src },
-    { beforeImage: avant5.src, afterImage: apres5.src },
-    { beforeImage: avant6.src, afterImage: apres6.src },
+    { beforeImage: longueuilBefore.src, afterImage: longueuilAfter.src },
+    { beforeImage: brossardBefore.src, afterImage: brossardAfter.src },
+    { beforeImage: bouchervilleBefore.src, afterImage: bouchervilleAfter.src },
+    { beforeImage: saintBrunoBefore.src, afterImage: saintBrunoAfter.src },
+    { beforeImage: candiacBefore.src, afterImage: candiacAfter.src },
+    { beforeImage: saintLambertBefore.src, afterImage: saintLambertAfter.src },
+    { beforeImage: laPrairieBefore.src, afterImage: laPrairieAfter.src },
+    { beforeImage: chamblyBefore.src, afterImage: chamblyAfter.src },
+    { beforeImage: sainteJulieBefore.src, afterImage: sainteJulieAfter.src },
+    { beforeImage: beloeilBefore.src, afterImage: beloeilAfter.src },
   ];
 
   const localizedItems = get("nextPages.realisation.items", []);
@@ -52,7 +66,7 @@ function Realisation() {
         <title key="title">{t("nextPages.realisation.headTitle")}</title>
         <link
           rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/Realisation"
+          href={`https://entretiensgouttieresrivesud.ca${canonicalPath}`}
           key="canonical"
         />
         <meta

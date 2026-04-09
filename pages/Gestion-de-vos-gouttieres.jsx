@@ -1,5 +1,5 @@
 import imgAccueilGestion from "../public/img/gouttieres-entretenues-par-les-entretiens-grondin.jpg";
-import imgConclusion from "../public/img/apres7.jpg";
+import imgConclusion from "../public/img/nettoyage-gouttiere-la-prairie-apres.jpg";
 import imgMaison from "../public/img/maison-qui-on-fait-appel-a-gouttiere-rive-sud.jpg";
 import React from "react";
 import Head from "next/head";

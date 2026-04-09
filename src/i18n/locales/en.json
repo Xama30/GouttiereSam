@@ -375,52 +375,80 @@
       ]
     },
     "realisation": {
-      "headTitle": "Projects | Les Entretiens Grondin",
-      "headDescription": "Discover our gutter cleaning and maintenance projects on Montreal's South Shore.",
-      "heading": "Projects",
-      "lead": "We are passionate about our work and committed to delivering quality service adapted to each property.",
+      "headTitle": "Before and after gutter cleaning projects | South Shore",
+      "headDescription": "See before and after gutter cleaning projects across Montreal South Shore: Longueuil, Brossard, Boucherville, La Prairie, Chambly and more.",
+      "heading": "Before and After Projects",
+      "lead": "Explore real before-and-after gutter cleaning projects completed across the South Shore, with measurable drainage improvements.",
       "items": [
         {
           "city": "Longueuil",
-          "title": "Complete gutter cleaning in Longueuil",
+          "title": "Before and after complete gutter cleaning in Longueuil",
           "description": "On this Longueuil property, wet leaves and helicopter seeds were blocking multiple gutter sections. We removed buildup, flushed downspouts, and restored consistent drainage away from the foundation.",
-          "alt_before": "Residential gutter clogged with wet leaves and helicopter seeds in Longueuil",
-          "alt_after": "Clean gutter with restored water flow after our service in Longueuil"
+          "alt_before": "Before cleaning: residential gutter clogged with wet leaves and helicopter seeds in Longueuil",
+          "alt_after": "After cleaning: restored water flow in a clean gutter in Longueuil"
         },
         {
           "city": "Brossard",
-          "title": "Emergency unclogging service in Brossard",
+          "title": "Before and after emergency gutter unclogging in Brossard",
           "description": "This Brossard home had severe overflow after heavy rain. We removed years of compacted leaf debris to clear the blockage and quickly return the gutter system to full performance.",
-          "alt_before": "Brossard gutter fully blocked by heavy leaf accumulation",
-          "alt_after": "Brossard gutter cleared and operating normally after emergency unclogging"
+          "alt_before": "Before unclogging: Brossard gutter fully blocked by heavy leaf accumulation",
+          "alt_after": "After unclogging: Brossard gutter cleared and operating normally"
         },
         {
           "city": "Boucherville",
-          "title": "Sludge and debris removal in Boucherville",
+          "title": "Before and after sludge removal in Boucherville gutters",
           "description": "In Boucherville, this gutter line contained sludge, stuck leaves, and small branches. Our team performed deep cleaning to reduce water infiltration risk around the roof edge and fascia.",
-          "alt_before": "Gutter filled with sludge and organic debris before service in Boucherville",
-          "alt_after": "Gutter system cleaned and flowing correctly after maintenance in Boucherville"
+          "alt_before": "Before service: gutter filled with sludge and organic debris in Boucherville",
+          "alt_after": "After service: gutter system cleaned and flowing correctly in Boucherville"
         },
         {
           "city": "Saint-Bruno-de-Montarville",
-          "title": "Spring cleanup in Saint-Bruno",
+          "title": "Before and after spring gutter cleanup in Saint-Bruno",
           "description": "Near Mont Saint-Bruno, pine needles and twigs had reduced downspout capacity. We cleaned channels and restored flow to prevent seasonal overflow during spring and summer storms.",
-          "alt_before": "Pine needles accumulated inside a gutter in Saint-Bruno-de-Montarville",
-          "alt_after": "Gutter cleared of pine needles and ready for storm season in Saint-Bruno-de-Montarville"
+          "alt_before": "Before cleanup: pine needles accumulated in a gutter in Saint-Bruno-de-Montarville",
+          "alt_after": "After cleanup: gutter cleared and ready for storm season in Saint-Bruno-de-Montarville"
         },
         {
           "city": "Candiac",
-          "title": "Preventive cleaning and flush in Candiac",
+          "title": "Before and after preventive gutter cleaning in Candiac",
           "description": "At this Candiac residence, fall leaves and roofing residue were restricting drainage. We completed manual debris removal, full rinsing, and downspout verification to reduce ice-dam risk.",
-          "alt_before": "Candiac gutter partially blocked by leaves and asphalt granules",
-          "alt_after": "Candiac gutter rinsed clean with smooth drainage after preventive service"
+          "alt_before": "Before preventive service: Candiac gutter partially blocked by leaves and asphalt granules",
+          "alt_after": "After preventive service: Candiac gutter rinsed clean with smooth drainage"
         },
         {
           "city": "Saint-Lambert",
-          "title": "Careful service on a heritage home in Saint-Lambert",
+          "title": "Before and after careful service on a heritage home in Saint-Lambert",
           "description": "This Saint-Lambert project required extra care due to older fascia and architectural details. We removed debris buildup and restored drainage while protecting the heritage exterior elements.",
-          "alt_before": "Heritage roofline with debris-filled gutter in Saint-Lambert",
-          "alt_after": "Clean functional gutter with preserved heritage details in Saint-Lambert"
+          "alt_before": "Before service: heritage roofline with debris-filled gutter in Saint-Lambert",
+          "alt_after": "After service: clean and functional gutter with preserved heritage details in Saint-Lambert"
+        },
+        {
+          "city": "La Prairie",
+          "title": "Before and after gutter flow restoration in La Prairie",
+          "description": "On this La Prairie property, compact organic buildup was slowing multiple downspouts. Manual extraction and controlled flushing restored stable drainage performance.",
+          "alt_before": "Before cleaning in La Prairie: compact debris blocking the gutter and downspout",
+          "alt_after": "After cleaning in La Prairie: clear gutter channel with restored drainage"
+        },
+        {
+          "city": "Chambly",
+          "title": "Before and after high-capacity gutter cleaning in Chambly",
+          "description": "In Chambly, moisture and dense leaf accumulation were causing repeated overflow. We cleared the channels, validated downspout output, and improved runoff around the foundation.",
+          "alt_before": "Before intervention in Chambly: gutter overloaded with wet leaves",
+          "alt_after": "After intervention in Chambly: clean gutter with optimized drainage"
+        },
+        {
+          "city": "Sainte-Julie",
+          "title": "Before and after seasonal gutter maintenance in Sainte-Julie",
+          "description": "This Sainte-Julie service removed mixed pine needles and compact residue before winter conditions. Final rinsing confirmed full evacuation across the complete gutter line.",
+          "alt_before": "Before maintenance in Sainte-Julie: gutter loaded with needles and compact residue",
+          "alt_after": "After maintenance in Sainte-Julie: gutter cleared and ready for cold season"
+        },
+        {
+          "city": "Beloeil",
+          "title": "Before and after full downspout cleaning in Beloeil",
+          "description": "In Beloeil, multiple downspouts showed restricted flow. We removed obstructions, tested throughput, and restored overall gutter system performance.",
+          "alt_before": "Before cleaning in Beloeil: downspout restricted by internal debris",
+          "alt_after": "After cleaning in Beloeil: downspout flowing freely with clean gutters"
         }
       ]
     },

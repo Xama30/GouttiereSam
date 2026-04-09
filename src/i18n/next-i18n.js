@@ -1,5 +1,5 @@
-import fr from "../../astro/src/i18n/locales/fr.json";
-import en from "../../astro/src/i18n/locales/en.json";
+import fr from "./locales/fr.json";
+import en from "./locales/en.json";
 
 const dictionaries = { fr, en };
 const defaultLang = "fr";

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Images from "../public/img/Images";
@@ -43,6 +44,14 @@ const Index = () => {
       <Header />
       <main>
         <section id="Accueil">
+          <Image
+            src="/img/home-bg.jpg"
+            alt="Nettoyage de gouttieres"
+            priority={true}
+            width={1200}
+            height={600}
+            className="accueil__hero-image"
+          />
           <div className="accueil__text-container">
             <h1 className="hidden_fade-bottom">
               {t("nextPages.index.heroTitle")}

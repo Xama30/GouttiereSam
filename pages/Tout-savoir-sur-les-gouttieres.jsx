@@ -1,5 +1,5 @@
 import imgProtegeGouttiere from "../public/img/protege-gouttiere-installe-par-gouttiere-rive-sud.png";
-import imgGouttieresPleines from "../public/img/avant6.jpg";
+import imgGouttieresPleines from "../public/img/nettoyage-gouttiere-saint-lambert-avant.jpg";
 
 import React from "react";
 import Head from "next/head";

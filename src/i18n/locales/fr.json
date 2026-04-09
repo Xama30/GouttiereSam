@@ -497,52 +497,80 @@
       ]
     },
     "realisation": {
-      "headTitle": "Réalisations | Les Entretiens Grondin",
-      "headDescription": "Découvrez nos réalisations en nettoyage et entretien de gouttières sur la Rive-Sud de Montréal.",
-      "heading": "Réalisations",
-      "lead": "Nous sommes passionnés par notre métier et nous nous engageons à fournir des interventions de qualité adaptées à chaque propriété.",
+      "headTitle": "Réalisations avant/après nettoyage de gouttières | Rive-Sud",
+      "headDescription": "Avant/après de nettoyage de gouttières sur la Rive-Sud de Montréal : Longueuil, Brossard, Boucherville, La Prairie, Chambly et plus.",
+      "heading": "Réalisations Avant/Après",
+      "lead": "Découvrez nos interventions réelles avant/après en nettoyage de gouttières sur la Rive-Sud, avec des résultats concrets sur différents types de propriétés.",
       "items": [
         {
           "city": "Longueuil",
-          "title": "Nettoyage complet de gouttières à Longueuil",
+          "title": "Avant/Après nettoyage complet de gouttières à Longueuil",
           "description": "Dans ce secteur résidentiel de Longueuil, les samares et feuilles humides bloquaient plusieurs sections de gouttières. Nous avons retiré l'accumulation, débouché les descentes et rétabli un drainage régulier loin des fondations.",
-          "alt_before": "Gouttière résidentielle obstruée par des feuilles humides et des samares à Longueuil",
-          "alt_after": "Gouttière propre avec écoulement rétabli après notre nettoyage à Longueuil"
+          "alt_before": "Avant nettoyage de gouttière résidentielle obstruée par des feuilles humides et des samares à Longueuil",
+          "alt_after": "Après nettoyage de gouttière propre avec écoulement rétabli à Longueuil"
         },
         {
           "city": "Brossard",
-          "title": "Débouchage d'urgence à Brossard",
+          "title": "Avant/Après débouchage d'urgence de gouttières à Brossard",
           "description": "Cette propriété de Brossard présentait un débordement majeur après de fortes pluies. Nous avons retiré plusieurs années de feuilles compactées pour éliminer le blocage et sécuriser l'évacuation de l'eau.",
-          "alt_before": "Gouttière à Brossard complètement bouchée par un amas de feuilles",
-          "alt_after": "Gouttière dégagée et fonctionnelle après débouchage d'urgence à Brossard"
+          "alt_before": "Avant débouchage : gouttière à Brossard complètement bouchée par un amas de feuilles",
+          "alt_after": "Après débouchage : gouttière dégagée et fonctionnelle à Brossard"
         },
         {
           "city": "Boucherville",
-          "title": "Retrait de boue et débris à Boucherville",
+          "title": "Avant/Après retrait de boue et débris à Boucherville",
           "description": "À Boucherville, les gouttières étaient remplies de boue, de feuilles collées et de petites branches. Notre équipe a effectué un nettoyage en profondeur pour prévenir les infiltrations d'eau autour de la toiture.",
-          "alt_before": "Gouttière remplie de boue et de débris végétaux avant intervention à Boucherville",
-          "alt_after": "Système de gouttière nettoyé et remis en service à Boucherville"
+          "alt_before": "Avant intervention : gouttière remplie de boue et de débris végétaux à Boucherville",
+          "alt_after": "Après intervention : système de gouttière nettoyé et remis en service à Boucherville"
         },
         {
           "city": "Saint-Bruno-de-Montarville",
-          "title": "Nettoyage de printemps à Saint-Bruno",
+          "title": "Avant/Après nettoyage de printemps à Saint-Bruno",
           "description": "Près du Mont Saint-Bruno, les aiguilles de conifères et les brindilles avaient réduit le débit des descentes. Nous avons nettoyé les canaux et ajusté l'écoulement pour éviter les débordements lors des pluies de saison.",
-          "alt_before": "Accumulation d'aiguilles de conifères dans une gouttière à Saint-Bruno-de-Montarville",
-          "alt_after": "Gouttière libérée des aiguilles et prête pour la saison des pluies à Saint-Bruno-de-Montarville"
+          "alt_before": "Avant nettoyage : accumulation d'aiguilles de conifères dans une gouttière à Saint-Bruno-de-Montarville",
+          "alt_after": "Après nettoyage : gouttière libérée des aiguilles et prête pour la saison des pluies à Saint-Bruno-de-Montarville"
         },
         {
           "city": "Candiac",
-          "title": "Entretien préventif et rinçage à Candiac",
+          "title": "Avant/Après entretien préventif et rinçage à Candiac",
           "description": "Sur cette maison de Candiac, les feuilles d'automne et les résidus de toiture ralentissaient le drainage. Nous avons fait le nettoyage manuel, le rinçage complet et la vérification des descentes pour prévenir les barrages de glace.",
-          "alt_before": "Gouttière partiellement bloquée par des feuilles et granules de bardeau à Candiac",
-          "alt_after": "Gouttière rincée et débit d'eau fluide après entretien préventif à Candiac"
+          "alt_before": "Avant entretien : gouttière partiellement bloquée par des feuilles et granules de bardeau à Candiac",
+          "alt_after": "Après entretien : gouttière rincée avec débit d'eau fluide à Candiac"
         },
         {
           "city": "Saint-Lambert",
-          "title": "Intervention soignée sur maison patrimoniale à Saint-Lambert",
+          "title": "Avant/Après intervention sur maison patrimoniale à Saint-Lambert",
           "description": "Cette résidence de Saint-Lambert nécessitait une approche délicate en raison d'une corniche ancienne. Nous avons retiré les débris accumulés et sécurisé l'écoulement sans endommager les éléments patrimoniaux.",
-          "alt_before": "Corniche patrimoniale avec gouttière encombrée de feuilles à Saint-Lambert",
-          "alt_after": "Gouttière nettoyée avec finition soignée sur une maison patrimoniale à Saint-Lambert"
+          "alt_before": "Avant intervention : corniche patrimoniale avec gouttière encombrée de feuilles à Saint-Lambert",
+          "alt_after": "Après intervention : gouttière nettoyée avec finition soignée sur maison patrimoniale à Saint-Lambert"
+        },
+        {
+          "city": "La Prairie",
+          "title": "Avant/Après remise en débit des gouttières à La Prairie",
+          "description": "Sur cette propriété de La Prairie, des dépôts organiques compacts bloquaient plusieurs points d'évacuation. Le nettoyage manuel suivi d'un rinçage contrôlé a rétabli un écoulement stable.",
+          "alt_before": "Avant nettoyage de gouttières à La Prairie avec débris compacts dans les descentes",
+          "alt_after": "Après nettoyage de gouttières à La Prairie avec écoulement rétabli"
+        },
+        {
+          "city": "Chambly",
+          "title": "Avant/Après nettoyage haute capacité à Chambly",
+          "description": "À Chambly, l'humidité et les feuilles accumulées provoquaient des débordements répétés. Nous avons dégagé les canaux, validé les descentes et sécurisé le drainage autour des fondations.",
+          "alt_before": "Avant intervention à Chambly : gouttière surchargée de feuilles humides",
+          "alt_after": "Après intervention à Chambly : gouttière propre avec drainage optimisé"
+        },
+        {
+          "city": "Sainte-Julie",
+          "title": "Avant/Après entretien saisonnier de gouttières à Sainte-Julie",
+          "description": "Cette intervention à Sainte-Julie visait à retirer un mélange d'aiguilles et de boue fine avant l'hiver. Le rinçage final a confirmé une évacuation complète sur toute la ligne.",
+          "alt_before": "Avant entretien à Sainte-Julie : accumulation d'aiguilles et de boue dans la gouttière",
+          "alt_after": "Après entretien à Sainte-Julie : gouttière dégagée et prête pour la saison froide"
+        },
+        {
+          "city": "Beloeil",
+          "title": "Avant/Après assainissement complet des descentes à Beloeil",
+          "description": "À Beloeil, les descentes pluviales présentaient des ralentissements importants. Nous avons retiré les obstructions, testé le débit et restauré la performance globale du système.",
+          "alt_before": "Avant assainissement à Beloeil : descente pluviale ralentie par des obstructions",
+          "alt_after": "Après assainissement à Beloeil : descente pluviale fluide et gouttière propre"
         }
       ]
     },
