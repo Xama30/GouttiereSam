@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://entretiensgouttieresrivesud.ca
+
+# Sitemaps
+Sitemap: https://entretiensgouttieresrivesud.ca/sitemap.xml

@@ -1,12 +1,15 @@
-import Form from './Form';
+import Form from "./Form";
+import { useNextI18n } from "../src/i18n/next-i18n-context";
 
-function CarteForm (){
-    return(
-        <div className="carteForm">
-            <h2>Faites une soumission gratuite en ligne maintenant</h2>
-            <h3>Réponse dans un délai de 24h</h3>
-            <Form/>
-        </div>
-    )
+function CarteForm() {
+  const { t } = useNextI18n();
+
+  return (
+    <div className="carteForm">
+      <h2>{t("components.carteForm.title")}</h2>
+      <h3>{t("components.carteForm.subtitle")}</h3>
+      <Form />
+    </div>
+  );
 }
 export default CarteForm;

@@ -1,7 +1,3 @@
-const sitemap = require('nextjs-sitemap-generator');  
+const { execSync } = require("child_process");
 
-sitemap({  
-  baseUrl: 'https://entretiensgouttieresrivesud.ca',  
-  pagesDirectory: __dirname + "/pages",  
-  targetDirectory : 'public/'  
-});
+execSync("npx next-sitemap", { stdio: "inherit" });

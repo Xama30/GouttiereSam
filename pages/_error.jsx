@@ -1,4 +1,4 @@
-import ErrorPage from './index.js'; 
+import ErrorPage from "./index.jsx";
 
 const CustomErrorPage = ({ statusCode }) => {
   // Utilisez le code d'état pour personnaliser la page d'erreur

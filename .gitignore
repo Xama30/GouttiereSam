@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/astro/node_modules/
 /.pnp
 .pnp.js
 
@@ -11,6 +12,8 @@
 # next.js
 /.next/
 /out/
+/astro/.astro/
+/astro/dist/
 
 # production
 /build

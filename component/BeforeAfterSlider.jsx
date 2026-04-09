@@ -1,6 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const BeforeAfterSlider = ({ beforeImage, afterImage }) => {
+const BeforeAfterSlider = ({
+  beforeImage,
+  afterImage,
+  beforeAlt = "Before image",
+  afterAlt = "After image",
+  beforeLabel = "Avant",
+  afterLabel = "Après",
+}) => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const sliderRef = useRef();
@@ -62,25 +69,32 @@ const BeforeAfterSlider = ({ beforeImage, afterImage }) => {
       onMouseDown={handleMouseDown}
       onTouchStart={handleTouchStart}
     >
-      <div
-        className="image-container before-image"
-        style={{
-          backgroundImage: `url(${beforeImage})`,
-          clipPath: `inset(0 0 0 ${sliderPosition}%)`,
-        }}
-      ></div>
-      {/* <style jsx>{`
-        .image-container.before-image{
-          background-image: url(${beforeImage}),
-          }
-        `}
-      </style> */}
+      <span className="slider-badge slider-badge--before">{beforeLabel}</span>
+      <span className="slider-badge slider-badge--after">{afterLabel}</span>
+
+      <div className="image-container before-image">
+        <img
+          src={beforeImage}
+          alt={beforeAlt}
+          loading="lazy"
+          decoding="async"
+          draggable="false"
+        />
+      </div>
       <div
         className="image-container after-image"
         style={{
-          backgroundImage: `url(${afterImage})`,
+          clipPath: `inset(0 0 0 ${sliderPosition}%)`,
         }}
-      ></div>
+      >
+        <img
+          src={afterImage}
+          alt={afterAlt}
+          loading="lazy"
+          decoding="async"
+          draggable="false"
+        />
+      </div>
       <div
         className="slider-handle"
         style={{

@@ -1,27 +1,99 @@
 #Realisation {
   padding: var(--padding-main-);
-}  
+}
 
 #Realisation .works {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: calc(1rem + 2vw);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: calc(0.8rem + 1.2vw);
+  align-items: stretch;
 }
+
+#Realisation .realisation-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f2f5f4;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+#Realisation .realisation-item .before-after-slider {
+  margin: 0;
+  max-width: unset;
+  min-height: 290px;
+  flex-shrink: 0;
+}
+
+#Realisation .realisation-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1rem 1rem 1.2rem;
+  min-height: 220px;
+}
+
+#Realisation .realisation-item__title {
+  font-size: calc(var(--h2-main-) - 0.55rem);
+  line-height: 1.2;
+  color: #102f2f;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  min-height: calc(1.2em * 3);
+}
+
+#Realisation .realisation-item__city {
+  align-self: flex-start;
+  color: white;
+  background: #1d593b;
+  font-size: calc(var(--p-main-) - 0.25rem);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  white-space: normal;
+}
+
+#Realisation .realisation-item__description {
+  color: #223736;
+  line-height: 1.65;
+  text-align: left;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
+}
+
 .Top__ContactUs {
-    display: flex;
-    flex-direction: column;
-    padding: calc(var(--padding-main-) - 2rem);
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--padding-main-) - 2rem);
 }
 .Top__ContactUs h2 {
-    font-size: var(--h2-main-);
-    padding: unset;
-    color: white;
-    margin-bottom: 1rem;
-  }
+  font-size: var(--h2-main-);
+  padding: unset;
+  color: white;
+  margin-bottom: 1rem;
+}
 .Top__ContactUs p {
-    font-size: var(--p-main-);
-    color: white;
-    text-align: center;
-    line-height: 1.8;
+  font-size: var(--p-main-);
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+  #Realisation .realisation-item__content {
+    min-height: 200px;
+  }
+
+  #Realisation .realisation-item__city {
+    white-space: normal;
+  }
 }

@@ -1,0 +1,148 @@
+---
+import '../styles/global.css';
+import { getLocalizedPath, useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang | 'fr-CA' | 'en-CA';
+  pathname?: string;
+  titleKey?: string;
+  descriptionKey?: string;
+  titleVars?: Record<string, string | number>;
+  descriptionVars?: Record<string, string | number>;
+  title?: string;
+  description?: string;
+  canonical?: string;
+  alternateFr?: string;
+  alternateEn?: string;
+}
+
+const {
+  lang: incomingLang,
+  pathname,
+  titleKey,
+  descriptionKey,
+  titleVars = {},
+  descriptionVars = {},
+  title: legacyTitle,
+  description: legacyDescription,
+  canonical: legacyCanonical,
+  alternateFr: legacyAlternateFr,
+  alternateEn: legacyAlternateEn,
+} = Astro.props as Props;
+
+const lang: Lang = incomingLang === 'en' || incomingLang === 'en-CA' ? 'en' : 'fr';
+const normalizePathForHead = (value: string) => {
+  return String(value ?? '')
+    .split('?')[0]
+    .split('#')[0]
+    .replace(/^\/+|\/+$/g, '');
+};
+const safePathname = normalizePathForHead(typeof pathname === 'string' ? pathname : '');
+const siteUrl = 'https://entretiensgouttieresrivesud.ca';
+const t = useTranslations(lang);
+const htmlLang = lang === 'fr' ? 'fr-CA' : 'en-CA';
+const ogLocale = lang === 'fr' ? 'fr_CA' : 'en_CA';
+const alternateOgLocale = lang === 'fr' ? 'en_CA' : 'fr_CA';
+const toAbsoluteUrl = (path: string) => new URL(path, `${siteUrl}/`).toString();
+const canonical = legacyCanonical ?? toAbsoluteUrl(getLocalizedPath(lang, safePathname));
+const alternateFr = legacyAlternateFr ?? toAbsoluteUrl(getLocalizedPath('fr', safePathname));
+const alternateEn = legacyAlternateEn ?? toAbsoluteUrl(getLocalizedPath('en', safePathname));
+const computedTitle = titleKey ? t(titleKey, titleVars) : t('seo.home.title');
+const computedDescription = descriptionKey
+  ? t(descriptionKey, descriptionVars)
+  : t('seo.home.description');
+const title = legacyTitle ?? computedTitle;
+const description = legacyDescription ?? computedDescription;
+const schemaDescription =
+  lang === 'fr'
+    ? "Nettoyage de gouttières, Débouchage, Installation de protège-gouttières et Entretien préventif sur la Rive-Sud de Montréal pour limiter les infiltrations d'eau."
+    : 'Gutter cleaning, unclogging, gutter guard installation and preventive maintenance across Montreal South Shore to reduce water infiltration risks.';
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HomeAndConstructionBusiness',
+  '@id': `${siteUrl}#local-business`,
+  name: 'Les Entretiens Grondin',
+  description: schemaDescription,
+  url: siteUrl,
+  telephone: '1-819-237-9813',
+  serviceType: 'Nettoyage de gouttieres',
+  availableLanguage: ['fr-CA', 'en-CA'],
+  areaServed: [
+    { '@type': 'City', name: 'Longueuil' },
+    { '@type': 'City', name: 'Brossard' },
+    { '@type': 'City', name: 'Boucherville' },
+    { '@type': 'City', name: 'Saint-Bruno' },
+    { '@type': 'City', name: 'Candiac' },
+    { '@type': 'City', name: 'Saint-Lambert' },
+    { '@type': 'City', name: 'La Prairie' },
+    { '@type': 'City', name: 'Chambly' },
+    { '@type': 'City', name: 'Sainte-Julie' },
+    { '@type': 'City', name: 'Beloeil' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: lang === 'fr' ? 'Services de gouttieres' : 'Gutter services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Gutter Cleaning / Nettoyage de gouttières',
+        },
+      },
+    ],
+  },
+};
+const navLinks = [
+  { href: getLocalizedPath(lang, ''), label: t('nav.home') },
+  { href: getLocalizedPath(lang, 'brossard'), label: t('nav.brossard') },
+  { href: getLocalizedPath(lang, 'longueuil'), label: t('nav.longueuil') },
+];
+const isEnglish = lang === 'en';
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={alternateOgLocale} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content="https://entretiensgouttieresrivesud.ca/logo.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://entretiensgouttieresrivesud.ca/logo.webp" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hrefLang="fr-CA" href={alternateFr} />
+    <link rel="alternate" hrefLang="en-CA" href={alternateEn} />
+    <link rel="alternate" hrefLang="x-default" href={alternateFr} />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  </head>
+  <body>
+    <header class="site-head">
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          {navLinks.map((item) => (
+            <li><a href={item.href}>{item.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+      <div class="site-lang">
+        <a href={alternateFr} class={!isEnglish ? 'active' : ''}>FR</a>
+        <span>/</span>
+        <a href={alternateEn} class={isEnglish ? 'active' : ''}>EN</a>
+      </div>
+    </header>
+    <slot />
+  </body>
+</html>
