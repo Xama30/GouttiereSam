@@ -2,10 +2,11 @@ import imgProtegeGouttiere from "../public/img/protege-gouttiere-installe-par-go
 import imgGouttieresPleines from "../public/img/nettoyage-gouttiere-saint-lambert-avant.jpg";
 
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 
 const Header = dynamic(() => import("../component/Header"));
 const Footer = dynamic(() => import("../component/Footer"));
@@ -16,24 +17,29 @@ const NumBar = dynamic(() => import("../component/NumBar"));
 const BorderTitle = dynamic(() => import("../component/BorderTitle"));
 
 function Informations() {
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
   const cards = get("nextPages.infoGouttieres.cards", []);
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = getLocalizedPath("fr-CA", "/tout-savoir-sur-les-gouttieres");
+  const enPath = getLocalizedPath("en", "/tout-savoir-sur-les-gouttieres");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.infoGouttieres.headTitle")}</title>
-        <meta
-          name="description"
-          content={t("nextPages.infoGouttieres.headDescription")}
-          key="description"
-        />
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-gouttieres"
-          key="canonical"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.infoGouttieres.headTitle")}
+        description={t("nextPages.infoGouttieres.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <TopMainPage
         title={t("nextPages.infoGouttieres.topTitle")}

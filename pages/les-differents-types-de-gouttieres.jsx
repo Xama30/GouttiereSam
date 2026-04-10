@@ -1,8 +1,9 @@
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import Images from "../public/img/Images";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 
 const Header = dynamic(() => import("../component/Header"));
 const AccueilArticle = dynamic(() => import("../component/AccueilArticle"));
@@ -16,25 +17,33 @@ const Footer = dynamic(() => import("../component/Footer"));
 const Soumission = dynamic(() => import("../component/Soumission"));
 
 function TypesGouttieres() {
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = getLocalizedPath(
+    "fr-CA",
+    "/les-differents-types-de-gouttieres",
+  );
+  const enPath = getLocalizedPath("en", "/les-differents-types-de-gouttieres");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   const itemsList = get("nextPages.types.itemsList", []);
 
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.types.headTitle")}</title>
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/les-differents-types-de-gouttieres"
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content={t("nextPages.types.headDescription")}
-          key="description"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.types.headTitle")}
+        description={t("nextPages.types.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <AccueilArticle
         titre={t("nextPages.types.accueilTitle")}

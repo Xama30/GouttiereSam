@@ -1,9 +1,10 @@
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import MaisonGouttiere4 from "../public/img/maison-dans-la-foret-de-la-region-de-la-rive-sud-avec-des-feuilles-qui-tombent-dans-les-gouttieres.jpg";
 import Image from "next/image";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 
 const Header = dynamic(() => import("../component/Header"));
 const TopMainPage = dynamic(() => import("../component/TopMainPage"));
@@ -15,23 +16,28 @@ const CarteForm = dynamic(() => import("../component/Carte_Form"));
 const Footer = dynamic(() => import("../component/Footer"));
 
 const Index = () => {
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = getLocalizedPath("fr-CA", "/nos-services");
+  const enPath = getLocalizedPath("en", "/nos-services");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   return (
     <div id="P1">
-      <Head>
-        <title key="title">{t("nextPages.services.headTitle")}</title>
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/nos-services"
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content={t("nextPages.services.headDescription")}
-          key="description"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.services.headTitle")}
+        description={t("nextPages.services.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <main>
         <TopMainPage

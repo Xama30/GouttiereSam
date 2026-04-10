@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -8,6 +7,8 @@ import {
   faMailReply,
 } from "@fortawesome/free-solid-svg-icons";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 
 const Header = dynamic(() => import("../component/Header"));
 const Icon_H3_P = dynamic(() => import("../component/Icon_H3_P"));
@@ -18,23 +19,28 @@ const Form = dynamic(() => import("../component/Form"));
 library.add(faClock, faPhone, faMailReply);
 
 function ContactUs() {
-  const { t } = useNextI18n();
+  const { t, lang } = useNextI18n();
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = getLocalizedPath("fr-CA", "/contactez-nous");
+  const enPath = getLocalizedPath("en", "/contactez-nous");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.contact.headTitle")}</title>
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/contactez-nous"
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content={t("nextPages.contact.headDescription")}
-          key="description"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.contact.headTitle")}
+        description={t("nextPages.contact.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <section id="#Contactez-nous" className="Top__ContactUs">
         <h2>{t("nextPages.contact.title")}</h2>

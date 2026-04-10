@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
-import { getI18n, resolveLang } from "../src/i18n/next-i18n";
+import { resolveLang } from "../src/i18n/next-i18n";
 import { NextI18nProvider } from "../src/i18n/next-i18n-context";
+import frLocale from "../src/i18n/locales/fr.json";
 import "../src/App.css";
 import "../src/CSS/Comment.css";
 import "../src/CSS/ContactUs.css";
@@ -13,183 +13,86 @@ import "../src/CSS/Quand.css";
 import "../src/CSS/Realisation.css";
 import "../src/CSS/Services.css";
 
+const CITY_NAME_OVERRIDES = {
+  longueuil: "Longueuil",
+  brossard: "Brossard",
+  boucherville: "Boucherville",
+  "saint-bruno": "Saint-Bruno-de-Montarville",
+  candiac: "Candiac",
+  "saint-lambert": "Saint-Lambert",
+  "la-prairie": "La Prairie",
+  chambly: "Chambly",
+  "sainte-julie": "Sainte-Julie",
+  beloeil: "Beloeil",
+};
+
+function citySlugToName(slug) {
+  const normalizedSlug = String(slug || "")
+    .trim()
+    .toLowerCase();
+
+  if (CITY_NAME_OVERRIDES[normalizedSlug]) {
+    return CITY_NAME_OVERRIDES[normalizedSlug];
+  }
+
+  return normalizedSlug
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+function resolveCurrentCityName(currentCity, allCityNamesBySlug) {
+  if (!currentCity) {
+    return "";
+  }
+
+  const normalizedInput = String(currentCity).trim().toLowerCase();
+
+  if (allCityNamesBySlug[normalizedInput]) {
+    return allCityNamesBySlug[normalizedInput];
+  }
+
+  const fromKnownName = Object.values(allCityNamesBySlug).find(
+    (cityName) => cityName.toLowerCase() === normalizedInput,
+  );
+
+  if (fromKnownName) {
+    return fromKnownName;
+  }
+
+  return citySlugToName(normalizedInput.replace(/\s+/g, "-"));
+}
+
 const MyApp = ({ Component, pageProps }) => {
-  const router = useRouter();
-  const siteUrl = "https://entretiensgouttieresrivesud.ca";
-  const rawPath = router.asPath.split("?")[0].split("#")[0];
-  const currentPath =
-    rawPath === "/en" ? "/" : rawPath.replace(/^\/en(?=\/|$)/, "") || "/";
-  const locale =
-    pageProps?.locale ||
-    (rawPath === "/en" || rawPath.startsWith("/en/") ? "en" : "fr-CA");
+  const locale = pageProps?.locale || "fr-CA";
   const lang = resolveLang(locale);
-  const { t } = getI18n(lang);
   const isEnglishPage = lang === "en";
-  const localizedPath = `${isEnglishPage ? "/en" : ""}${currentPath === "/" ? "" : currentPath}`;
-  const canonicalUrl = `${siteUrl}${localizedPath}`;
-  const routeAlternates = {
-    "/nos-services": {
-      fr: "/nos-services",
-      en: "/services",
-    },
-    "/services": {
-      fr: "/nos-services",
-      en: "/services",
-    },
-    "/contactez-nous": {
-      fr: "/contactez-nous",
-      en: "/contact",
-    },
-    "/contact": {
-      fr: "/contactez-nous",
-      en: "/contact",
-    },
-    "/faq": {
-      fr: "/faq",
-      en: "/faq",
-    },
-    "/realisation": {
-      fr: "/realisation",
-      en: "/projects",
-    },
-    "/projects": {
-      fr: "/realisation",
-      en: "/projects",
-    },
-    "/pourquoi-entretenir-ses-gouttieres": {
-      fr: "/pourquoi-entretenir-ses-gouttieres",
-      en: "/why-maintain-gutters",
-    },
-    "/why-maintain-gutters": {
-      fr: "/pourquoi-entretenir-ses-gouttieres",
-      en: "/why-maintain-gutters",
-    },
-    "/quand-nettoyer-ses-gouttieres": {
-      fr: "/quand-nettoyer-ses-gouttieres",
-      en: "/when-to-clean-gutters",
-    },
-    "/when-to-clean-gutters": {
-      fr: "/quand-nettoyer-ses-gouttieres",
-      en: "/when-to-clean-gutters",
-    },
-    "/comment-nettoyer-ses-gouttieres": {
-      fr: "/comment-nettoyer-ses-gouttieres",
-      en: "/how-to-clean-gutters",
-    },
-    "/how-to-clean-gutters": {
-      fr: "/comment-nettoyer-ses-gouttieres",
-      en: "/how-to-clean-gutters",
-    },
-    "/gestion-de-vos-gouttieres": {
-      fr: "/gestion-de-vos-gouttieres",
-      en: "/gutter-maintenance-guide",
-    },
-    "/gutter-maintenance-guide": {
-      fr: "/gestion-de-vos-gouttieres",
-      en: "/gutter-maintenance-guide",
-    },
-    "/les-differents-types-de-gouttieres": {
-      fr: "/les-differents-types-de-gouttieres",
-      en: "/gutter-types",
-    },
-    "/gutter-types": {
-      fr: "/les-differents-types-de-gouttieres",
-      en: "/gutter-types",
-    },
-  };
-  const alternatePair = routeAlternates[currentPath] || {
-    fr: currentPath,
-    en: currentPath,
-  };
-  const frAltUrl = `${siteUrl}${alternatePair.fr === "/" ? "" : alternatePair.fr}`;
-  const enAltUrl = `${siteUrl}/en${alternatePair.en === "/" ? "" : alternatePair.en}`;
-  const seoByPath = {
-    "/": {
-      titleKey: "nextPages.index.headTitle",
-      descriptionKey: "nextPages.index.headDescription",
-    },
-    "/nos-services": {
-      titleKey: "nextPages.services.headTitle",
-      descriptionKey: "nextPages.services.headDescription",
-    },
-    "/services": {
-      titleKey: "nextPages.services.headTitle",
-      descriptionKey: "nextPages.services.headDescription",
-    },
-    "/contactez-nous": {
-      titleKey: "nextPages.contact.headTitle",
-      descriptionKey: "nextPages.contact.headDescription",
-    },
-    "/contact": {
-      titleKey: "nextPages.contact.headTitle",
-      descriptionKey: "nextPages.contact.headDescription",
-    },
-    "/faq": {
-      titleKey: "nextPages.faq.headTitle",
-      descriptionKey: "nextPages.faq.headDescription",
-    },
-    "/realisation": {
-      titleKey: "nextPages.realisation.headTitle",
-      descriptionKey: "nextPages.realisation.headDescription",
-    },
-    "/projects": {
-      titleKey: "nextPages.realisation.headTitle",
-      descriptionKey: "nextPages.realisation.headDescription",
-    },
-    "/pourquoi-entretenir-ses-gouttieres": {
-      titleKey: "nextPages.pourquoi.headTitle",
-      descriptionKey: "nextPages.pourquoi.headDescription",
-    },
-    "/why-maintain-gutters": {
-      titleKey: "nextPages.pourquoi.headTitle",
-      descriptionKey: "nextPages.pourquoi.headDescription",
-    },
-    "/quand-nettoyer-ses-gouttieres": {
-      titleKey: "nextPages.quand.headTitle",
-      descriptionKey: "nextPages.quand.headDescription",
-    },
-    "/when-to-clean-gutters": {
-      titleKey: "nextPages.quand.headTitle",
-      descriptionKey: "nextPages.quand.headDescription",
-    },
-    "/comment-nettoyer-ses-gouttieres": {
-      titleKey: "nextPages.comment.headTitle",
-      descriptionKey: "nextPages.comment.headDescription",
-    },
-    "/how-to-clean-gutters": {
-      titleKey: "nextPages.comment.headTitle",
-      descriptionKey: "nextPages.comment.headDescription",
-    },
-    "/gestion-de-vos-gouttieres": {
-      titleKey: "nextPages.gestion.headTitle",
-      descriptionKey: "nextPages.gestion.headDescription",
-    },
-    "/gutter-maintenance-guide": {
-      titleKey: "nextPages.gestion.headTitle",
-      descriptionKey: "nextPages.gestion.headDescription",
-    },
-    "/les-differents-types-de-gouttieres": {
-      titleKey: "nextPages.types.headTitle",
-      descriptionKey: "nextPages.types.headDescription",
-    },
-    "/gutter-types": {
-      titleKey: "nextPages.types.headTitle",
-      descriptionKey: "nextPages.types.headDescription",
-    },
-    "/tout-savoir-sur-les-gouttieres": {
-      titleKey: "nextPages.infoGouttieres.headTitle",
-      descriptionKey: "nextPages.infoGouttieres.headDescription",
-    },
-    "/tout-savoir-sur-les-pare-feuilles": {
-      titleKey: "nextPages.pareFeuilles.headTitle",
-      descriptionKey: "nextPages.pareFeuilles.headDescription",
-    },
-  };
-  const seoEntry = seoByPath[currentPath] || seoByPath["/"];
-  const seo = {
-    title: t(seoEntry.titleKey),
-    description: t(seoEntry.descriptionKey),
-  };
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const allCityNamesBySlug = Object.fromEntries(
+    Object.keys(frLocale?.cities || {}).map((citySlug) => [
+      citySlug,
+      citySlugToName(citySlug),
+    ]),
+  );
+  const allCityNames = Object.values(allCityNamesBySlug);
+  const currentCityName = resolveCurrentCityName(
+    pageProps?.currentCity || pageProps?.citySlug,
+    allCityNamesBySlug,
+  );
+  const areaServed = currentCityName
+    ? [
+        currentCityName,
+        "Rive-Sud",
+        ...allCityNames.filter((cityName) => cityName !== currentCityName),
+      ]
+    : ["Rive-Sud", ...allCityNames];
+  const defaultTitle = isEnglishPage
+    ? "South Shore Gutter Cleaning | Free Quote"
+    : "Nettoyage gouttières Rive-Sud | Soumission gratuite";
+  const defaultDescription = isEnglishPage
+    ? "Gutter cleaning, unclogging and gutter guard installation across Montreal's South Shore. Fast service with a free quote."
+    : "Nettoyage de gouttières, débouchage et installation de pare-feuilles sur la Rive-Sud. Service rapide et soumission gratuite.";
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -197,7 +100,7 @@ const MyApp = ({ Component, pageProps }) => {
     image: `${siteUrl}/logo.webp`,
     url: siteUrl,
     telephone: "+1-819-237-9813",
-    areaServed: ["Rive-Sud", "Longueuil", "Brossard", "Candiac", "Chambly"],
+    areaServed,
     address: {
       "@type": "PostalAddress",
       addressRegion: "QC",
@@ -222,6 +125,12 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
+        <title key="title">{defaultTitle}</title>
+        <meta
+          name="description"
+          content={defaultDescription}
+          key="description"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
@@ -234,6 +143,7 @@ const MyApp = ({ Component, pageProps }) => {
         />
         <meta name="author" content="Les Entretiens Grondin" key="author" />
         <meta name="theme-color" content="#1f4b38" key="theme-color" />
+        <meta property="og:type" content="website" key="og:type" />
         <meta
           property="og:site_name"
           content="Les Entretiens Grondin"
@@ -249,16 +159,13 @@ const MyApp = ({ Component, pageProps }) => {
           content={isEnglishPage ? "fr_CA" : "en_CA"}
           key="og:locale:alternate"
         />
-        <meta property="og:type" content="website" key="og:type" />
-        <title key="title">{seo.title}</title>
-        <meta name="description" content={seo.description} key="description" />
-        <meta property="og:url" content={canonicalUrl} key="og:url" />
-        <meta property="og:title" content={seo.title} key="og:title" />
+        <meta property="og:title" content={defaultTitle} key="og:title" />
         <meta
           property="og:description"
-          content={seo.description}
+          content={defaultDescription}
           key="og:description"
         />
+        <meta property="og:url" content={siteUrl} key="og:url" />
         <meta
           property="og:image"
           content={`${siteUrl}/logo.webp`}
@@ -269,10 +176,10 @@ const MyApp = ({ Component, pageProps }) => {
           content="summary_large_image"
           key="twitter:card"
         />
-        <meta name="twitter:title" content={seo.title} key="twitter:title" />
+        <meta name="twitter:title" content={defaultTitle} key="twitter:title" />
         <meta
           name="twitter:description"
-          content={seo.description}
+          content={defaultDescription}
           key="twitter:description"
         />
         <meta
@@ -280,20 +187,7 @@ const MyApp = ({ Component, pageProps }) => {
           content={`${siteUrl}/logo.webp`}
           key="twitter:image"
         />
-        <link rel="canonical" href={canonicalUrl} key="canonical" />
-        <link
-          rel="alternate"
-          hrefLang="fr-CA"
-          href={frAltUrl}
-          key="hreflang-fr-ca"
-        />
-        <link rel="alternate" hrefLang="en" href={enAltUrl} key="hreflang-en" />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={frAltUrl}
-          key="hreflang-x-default"
-        />
+        <link rel="canonical" href={siteUrl} key="canonical" />
         <link rel="icon" type="image/webp" href="/logo.webp" key="icon" />
         <link
           rel="apple-touch-icon"

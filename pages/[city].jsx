@@ -1,7 +1,8 @@
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import SeoHead from "../component/SeoHead";
+import frLocale from "../src/i18n/locales/fr.json";
 
 const Animation = dynamic(() => import("../component/Animation"));
 const Header = dynamic(() => import("../component/Header"));
@@ -10,6 +11,8 @@ const Soumission = dynamic(() => import("../component/Soumission"));
 const BoxTxt = dynamic(() => import("../component/BoxTxt"));
 const CarteForm = dynamic(() => import("../component/Carte_Form"));
 const Footer = dynamic(() => import("../component/Footer"));
+
+const CITY_SLUGS = Object.keys(frLocale?.cities || {});
 
 const CITY_LABELS = {
   longueuil: "Longueuil",
@@ -24,21 +27,22 @@ const CITY_LABELS = {
   beloeil: "Beloeil",
 };
 
-function CityPage({ citySlug }) {
+function CityPage({ citySlug, cityData: cityDataFromProps }) {
   const { t, get, lang } = useNextI18n();
 
   const cityName = CITY_LABELS[citySlug] || citySlug;
-  const cityData = get(`cities.${citySlug}`, null);
+  const cityData = get(`cities.${citySlug}`, cityDataFromProps || null);
   const title = cityData?.meta_title || t("seo.city.title", { city: cityName });
   const description =
     cityData?.meta_description || t("seo.city.description", { city: cityName });
 
   const siteUrl = "https://entretiensgouttieresrivesud.ca";
-  const locale = lang === "en" ? "en" : "fr-CA";
+  const isEnglish = lang === "en";
   const currentPath = `/${citySlug}`;
-  const canonical = `${siteUrl}${locale === "en" ? `/en${currentPath}` : currentPath}`;
+  const canonical = `${siteUrl}${isEnglish ? `/en${currentPath}` : currentPath}`;
   const frAlt = `${siteUrl}${currentPath}`;
   const enAlt = `${siteUrl}/en${currentPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   const serviceBullets = get("page.city.serviceBullets", [
     "Nettoyage résidentiel",
@@ -64,32 +68,18 @@ function CityPage({ citySlug }) {
 
   return (
     <>
-      <Head>
-        <title key="title">{title}</title>
-        <meta name="description" content={description} key="description" />
-        <link rel="canonical" href={canonical} key="canonical" />
-        <link
-          rel="alternate"
-          hrefLang="fr-CA"
-          href={frAlt}
-          key="hreflang-fr-ca"
-        />
-        <link rel="alternate" hrefLang="en" href={enAlt} key="hreflang-en" />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={frAlt}
-          key="hreflang-x-default"
-        />
-        <meta property="og:type" content="website" key="og:type" />
-        <meta property="og:title" content={title} key="og:title" />
-        <meta
-          property="og:description"
-          content={description}
-          key="og:description"
-        />
-        <meta property="og:url" content={canonical} key="og:url" />
-      </Head>
+      <SeoHead
+        title={title}
+        description={description}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: frAlt },
+          { hrefLang: "en-CA", href: enAlt },
+          { hrefLang: "x-default", href: frAlt },
+        ]}
+      />
 
       <Animation />
       <Header />
@@ -163,7 +153,7 @@ function CityPage({ citySlug }) {
 }
 
 export function getStaticPaths() {
-  const paths = Object.keys(CITY_LABELS).map((city) => ({
+  const paths = CITY_SLUGS.map((city) => ({
     params: { city },
   }));
 
@@ -175,14 +165,17 @@ export function getStaticPaths() {
 
 export function getStaticProps({ params }) {
   const citySlug = (params?.city || "").toLowerCase();
+  const cityData = frLocale?.cities?.[citySlug] || null;
 
-  if (!Object.prototype.hasOwnProperty.call(CITY_LABELS, citySlug)) {
+  if (!cityData) {
     return { notFound: true };
   }
 
   return {
     props: {
       citySlug,
+      cityData,
+      currentCity: citySlug,
     },
   };
 }

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 
 const Header = dynamic(() => import("../component/Header"));
 const TopMainPage = dynamic(() => import("../component/TopMainPage"));
@@ -11,9 +12,15 @@ const CarteForm = dynamic(() => import("../component/Carte_Form"));
 const Footer = dynamic(() => import("../component/Footer"));
 
 function FAQ() {
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
   const data = get("nextPages.faq.items", []);
   const conclusion = get("nextPages.faq.conclusion", []);
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = getLocalizedPath("fr-CA", "/faq");
+  const enPath = getLocalizedPath("en", "/faq");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   const [selected, setSelected] = useState(null);
 
@@ -25,19 +32,18 @@ function FAQ() {
   };
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.faq.headTitle")}</title>
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/faq"
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content={t("nextPages.faq.headDescription")}
-          key="description"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.faq.headTitle")}
+        description={t("nextPages.faq.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <TopMainPage
         title={t("nextPages.faq.topTitle")}

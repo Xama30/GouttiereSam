@@ -1,9 +1,9 @@
 import Images from "../public/img/Images";
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import SeoHead from "../component/SeoHead";
 
 const Header = dynamic(() => import("../component/Header"));
 const Footer = dynamic(() => import("../component/Footer"));
@@ -18,26 +18,31 @@ const Soumission = dynamic(() => import("../component/Soumission"));
 const CarteForm = dynamic(() => import("../component/Carte_Form"));
 
 function Parefeuilles() {
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = "/tout-savoir-sur-les-pare-feuilles";
+  const enPath = "/en/tout-savoir-sur-les-pare-feuilles";
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   const itemLists = get("nextPages.pareFeuilles.itemLists", []);
   const itemLists2 = get("nextPages.pareFeuilles.itemLists2", []);
 
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.pareFeuilles.headTitle")}</title>
-        <meta
-          name="description"
-          content={t("nextPages.pareFeuilles.headDescription")}
-          key="description"
-        />
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-pare-feuilles"
-          key="canonical"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.pareFeuilles.headTitle")}
+        description={t("nextPages.pareFeuilles.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <AccueilArticle
         titre={t("nextPages.pareFeuilles.accueilTitle")}

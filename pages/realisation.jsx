@@ -1,7 +1,8 @@
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 import {
   longueuilBefore,
   longueuilAfter,
@@ -35,7 +36,11 @@ const NumBar = dynamic(() => import("../component/NumBar"));
 function Realisation() {
   const { t, get, lang } = useNextI18n();
   const isEnglish = lang === "en";
-  const canonicalPath = isEnglish ? "/projects" : "/realisation";
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const frPath = getLocalizedPath("fr-CA", "/realisation");
+  const enPath = getLocalizedPath("en", "/realisation");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   const sliderPairs = [
     { beforeImage: longueuilBefore.src, afterImage: longueuilAfter.src },
@@ -60,19 +65,18 @@ function Realisation() {
 
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.realisation.headTitle")}</title>
-        <link
-          rel="canonical"
-          href={`https://entretiensgouttieresrivesud.ca${canonicalPath}`}
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content={t("nextPages.realisation.headDescription")}
-          key="description"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.realisation.headTitle")}
+        description={t("nextPages.realisation.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <section id="P2" className="Top__ContactUs">
         <h2>{t("nextPages.realisation.heading")}</h2>

@@ -6,19 +6,19 @@
   },
   "common": {
     "phoneCta": "Appeler maintenant",
-    "phoneAria": "Appeler Les Entretiens Grondin",
+    "phoneAria": "Appeler le service client des Entretiens Grondin",
     "cityExampleCta": "Voir un exemple de page locale",
     "backHome": "Retour a l'accueil",
     "switchToOtherLang": "English version"
   },
   "seo": {
     "home": {
-      "title": "Nettoyage de gouttieres Rive-Sud | Les Entretiens Grondin",
-      "description": "Service professionnel de nettoyage de gouttieres et installation de pare-feuilles sur la Rive-Sud."
+      "title": "Nettoyage gouttières Rive-Sud | Soumission gratuite",
+      "description": "Nettoyage de gouttières, débouchage et installation de pare-feuilles sur la Rive-Sud. Service rapide et soumission gratuite."
     },
     "city": {
-      "title": "Nettoyage de gouttieres a {city} | Les Entretiens Grondin",
-      "description": "Service local de nettoyage de gouttieres, inspection et entretien preventif a {city}."
+      "title": "Nettoyage gouttières à {city} | Soumission gratuite",
+      "description": "Nettoyage de gouttières à {city}, débouchage et installation de pare-feuilles. Service local rapide."
     }
   },
   "page": {
@@ -44,8 +44,8 @@
   },
   "cities": {
     "longueuil": {
-      "meta_title": "Nettoyage de gouttières à Longueuil | Entretiens Grondin",
-      "meta_description": "Service professionnel de nettoyage, entretien et débouchage de gouttières à Longueuil. Protégez votre toiture et vos fondations contre les infiltrations d'eau.",
+      "meta_title": "Nettoyage et débouchage de gouttières à Longueuil | Devis gratuit",
+      "meta_description": "Besoin d'un nettoyage de gouttières à Longueuil ? Notre équipe spécialisée s'occupe du vidage, débouchage et de la pose de pare-feuilles. Soumission rapide.",
       "h1": "Expert en nettoyage de gouttières à Longueuil",
       "intro_paragraph": "Avec ses nombreux quartiers résidentiels et ses parcs, les maisons de Longueuil sont souvent exposées à une accumulation rapide de débris. Un système d'évacuation bouché peut causer de graves dommages à votre fondation. Notre équipe intervient rapidement pour le débouchage et le lavage complet de vos gouttières à Longueuil.",
       "service_list_title": "Nos services d'entretien à Longueuil :",
@@ -56,8 +56,8 @@
       "detailed_process": "Lorsque notre équipe arrive à votre domicile de Longueuil, nous débutons par une inspection visuelle complète de la ligne de toiture, des corniches et des descentes pluviales. Cette première étape permet d'identifier rapidement les zones surchargées en feuilles, les pentes inversées et les fixations qui demandent une correction préventive. Nous installons ensuite nos échelles avec stabilisateurs pour protéger le revêtement et travailler en toute sécurité, même dans les secteurs plus denses. Le nettoyage principal est effectué à la main pour retirer sans brutalité les amas de feuilles humides, de samares et de boue compacte. Une fois les gouttières dégagées, nous procédons à un rinçage contrôlé afin de vérifier le débit jusqu'au sol et confirmer que chaque descente évacue correctement. Avant de quitter, nous ramassons tous les résidus et laissons votre terrain propre, avec un compte rendu clair des points surveillés."
     },
     "brossard": {
-      "meta_title": "Nettoyage de gouttières à Brossard | Rapide & Efficace",
-      "meta_description": "Vous cherchez un expert pour vos gouttières à Brossard? Lavage, inspection et installation de protège-gouttières. Demandez votre devis gratuit dès aujourd'hui.",
+      "meta_title": "Entretien de gouttières à Brossard | Installation Pare-feuilles",
+      "meta_description": "Protégez votre maison avec notre service de lavage et d'entretien de gouttières à Brossard. Évitez les débordements d'eau dès aujourd'hui.",
       "h1": "Nettoyage et entretien de gouttières à Brossard",
       "intro_paragraph": "Protégez votre investissement immobilier à Brossard grâce à un entretien préventif rigoureux. Que vous habitiez près du fleuve ou dans les nouveaux développements, les intempéries mettent vos gouttières à rude épreuve. Nous offrons un service d'inspection et de nettoyage de gouttières sans faille à Brossard.",
       "service_list_title": "Pourquoi choisir nos experts à Brossard :",
@@ -68,8 +68,8 @@
       "detailed_process": "Sur une propriété de Brossard, notre intervention commence toujours par une lecture précise de la toiture et des points de débordement, car les vents et la poussière urbaine peuvent déplacer les débris vers des zones inattendues. Nous inspectons les noues, les angles de toit et les sections proches des arbres afin de planifier une intervention sans risque. Les échelles sont positionnées avec des appuis de protection pour éviter toute marque sur le parement et assurer une stabilité constante. Le nettoyage est ensuite réalisé manuellement pour retirer feuilles, petites branches et dépôts organiques sans endommager l'aluminium. Nous poursuivons par un rinçage sous pression maîtrisée pour éliminer la saleté incrustée et valider l'écoulement intégral dans les descentes. En fin de service, nous nettoyons les abords immédiats de la maison et vous partageons nos recommandations d'entretien saisonnier selon la configuration de votre toit."
     },
     "boucherville": {
-      "meta_title": "Entretien et nettoyage de gouttières à Boucherville",
-      "meta_description": "Évitez les bouchons causés par les feuilles! Experts en nettoyage de gouttières et pose de pare-feuilles à Boucherville. Service courtois et professionnel.",
+      "meta_title": "Lavage de gouttières Boucherville | Service local rapide",
+      "meta_description": "Vos gouttières débordent ? Experts en nettoyage et inspection préventive à Boucherville. Installation de protège-gouttières en aluminium.",
       "h1": "Service professionnel de nettoyage de gouttières à Boucherville",
       "intro_paragraph": "Boucherville est reconnue pour la beauté de ses arbres matures, mais leurs feuilles et branchettes sont l'ennemi numéro un de vos corniches. Si vos gouttières débordent, c'est le moment d'agir. Nous sommes spécialisés dans le nettoyage de gouttières à Boucherville.",
       "service_list_title": "Solutions pour les maisons de Boucherville :",
@@ -80,8 +80,8 @@
       "detailed_process": "À Boucherville, où les arbres matures produisent beaucoup de feuilles et de samares, nous appliquons une méthode structurée pour restaurer rapidement la circulation de l'eau. Nous commençons par vérifier l'état général des gouttières, des joints et des attaches pour détecter tout signe de fatigue avant le lavage. Une fois la zone sécurisée, nos techniciens retirent à la main les débris accumulés afin de ne pas déformer les sections fragiles. Nous portons une attention particulière aux descentes pluviales, souvent obstruées par des matières compactées. Après cette extraction minutieuse, nous effectuons un rinçage progressif pour décolmater les conduits et confirmer un débit fluide jusqu'au niveau du sol. Nous terminons par un nettoyage complet du chantier, incluant le ramassage des déchets végétaux autour de la maison, puis nous expliquons les actions préventives adaptées à votre environnement local."
     },
     "saint-bruno": {
-      "meta_title": "Nettoyage de gouttières Saint-Bruno-de-Montarville",
-      "meta_description": "Résidents de St-Bruno : confiez l'entretien de vos gouttières à des experts locaux. Sécuritaire, propre et abordable. Appelez-nous!",
+      "meta_title": "Déblocage et nettoyage gouttières Saint-Bruno-de-Montarville",
+      "meta_description": "Confiez l'entretien automnal et printanier de vos gouttières à nos experts de St-Bruno. Sécuritaire, propre et abordable. Appelez-nous !",
       "h1": "Nettoyage de gouttières à Saint-Bruno-de-Montarville",
       "intro_paragraph": "La proximité du Mont Saint-Bruno apporte beaucoup de charme, mais aussi énormément de débris organiques dans vos descentes d'eau. Un entretien régulier est primordial. L'équipe des Entretiens Grondin débloque, nettoie et sécurise vos gouttières à Saint-Bruno-de-Montarville.",
       "service_list_title": "Ce qui est inclus dans notre nettoyage :",
@@ -92,8 +92,8 @@
       "detailed_process": "À Saint-Bruno-de-Montarville, la proximité des zones boisées et du relief augmente la présence d'aiguilles, de brindilles et d'humidité dans les gouttières. Notre méthode commence par une inspection détaillée des sections les plus exposées afin de repérer les bouchons, les points de retenue d'eau et les fixations qui ont souffert durant l'hiver. Nous installons ensuite nos échelles avec stabilisateurs pour protéger les fascias et intervenir de façon stable sur toute la longueur du toit. Le nettoyage est effectué manuellement, section par section, afin de retirer les dépôts sans endommager les matériaux. Nous complétons cette étape par un rinçage à pression contrôlée pour évacuer les résidus fins et valider le passage de l'eau dans chaque descente. Si nous détectons des nids ou des obstructions atypiques, nous les retirons de manière sécuritaire avant de finaliser le chantier et laisser les lieux impeccables."
     },
     "candiac": {
-      "meta_title": "Nettoyage de gouttières à Candiac | Pare-feuilles et Entretien",
-      "meta_description": "Évitez les infiltrations d'eau avec notre service d'entretien préventif et de nettoyage de gouttières à Candiac. Débouchage rapide et protège-gouttières.",
+      "meta_title": "Entreprise de nettoyage de gouttières à Candiac | Grondin",
+      "meta_description": "Évitez les infiltrations d'eau au sous-sol. Entretien préventif, vidage complet et pose de pare-feuilles pour votre résidence à Candiac.",
       "h1": "Entretien préventif et nettoyage de gouttières à Candiac",
       "intro_paragraph": "Les arbres matures de Candiac ajoutent du charme à votre propriété, mais menacent l'écoulement de vos eaux pluviales. Un débouchage régulier est essentiel pour éviter les infiltrations d'eau dans vos fondations. Aux Entretiens Grondin, nous offrons un nettoyage méticuleux à Candiac.",
       "service_list_title": "Nos services spécialisés à Candiac :",
@@ -104,8 +104,8 @@
       "detailed_process": "Dans les quartiers résidentiels de Candiac, nous accordons une attention particulière à la protection de votre aménagement paysager pendant toute l'intervention. Avant de monter, nous inspectons la toiture, les corniches et les sorties de descente pour cibler les zones critiques et préparer un plan de travail efficace. Nous plaçons ensuite des protections au sol près des plates-bandes et des arbustes afin de récupérer les débris et conserver un terrain propre. Le nettoyage est réalisé à la main avec des outils adaptés pour extraire feuilles, boue et granules sans forcer sur les sections de gouttière. Une fois les conduits dégagés, nous rinçons chaque ligne pour vérifier que l'eau s'écoule librement jusqu'aux points de rejet. Nous terminons par un ramassage complet des résidus autour de la maison et un bilan de prévention saisonnière pour limiter les débordements futurs."
     },
     "saint-lambert": {
-      "meta_title": "Débouchage et nettoyage de gouttières à Saint-Lambert",
-      "meta_description": "Protégez votre maison patrimoniale à Saint-Lambert. Experts en nettoyage de gouttières, débouchage et installation de protège-gouttières sur mesure.",
+      "meta_title": "Nettoyage de gouttières à Saint-Lambert | Maison patrimoniale",
+      "meta_description": "Prenez soin des corniches de votre maison à Saint-Lambert. Service minutieux de débouchage et installation de grilles de protection sur mesure.",
       "h1": "Expert en débouchage et nettoyage de gouttières à Saint-Lambert",
       "intro_paragraph": "L'architecture classique et les arbres centenaires de Saint-Lambert exigent un entretien extérieur rigoureux. Les vieilles corniches sont vulnérables aux débordements. Notre équipe effectue un débouchage sécuritaire et un nettoyage en profondeur à Saint-Lambert.",
       "service_list_title": "Protection sur mesure pour Saint-Lambert :",
@@ -116,8 +116,8 @@
       "detailed_process": "À Saint-Lambert, plusieurs résidences possèdent des toitures plus anciennes ou des éléments patrimoniaux qui exigent une approche prudente. Notre intervention débute donc par une inspection fine des joints, des sections sensibles et des points d'ancrage pour éviter toute contrainte inutile pendant le nettoyage. Nous utilisons des échelles avec appuis stabilisés afin de ne pas exercer de pression directe sur les corniches vieillissantes. Le retrait des débris se fait manuellement et progressivement pour préserver l'intégrité des gouttières, en particulier dans les zones où les dépôts sont compacts. Nous procédons ensuite à un rinçage maîtrisé pour déboucher les descentes et confirmer un écoulement régulier sans fuite apparente. Avant de partir, nous effectuons un nettoyage rigoureux des abords et nous vous remettons un retour clair sur l'état général du système et les corrections préventives recommandées."
     },
     "la-prairie": {
-      "meta_title": "Nettoyage de gouttières La Prairie | Entretien Préventif",
-      "meta_description": "Service de nettoyage de gouttières rapide et abordable à La Prairie. Empêchez les dommages à votre toiture grâce à notre entretien préventif professionnel.",
+      "meta_title": "Vidage et nettoyage de gouttières La Prairie | Urgence",
+      "meta_description": "Gouttières bouchées par les feuilles ? Lavage rapide et abordable à La Prairie. Empêchez les dommages à votre toiture avec un bon entretien.",
       "h1": "Service de nettoyage de gouttières professionnel à La Prairie",
       "intro_paragraph": "Que vous résidiez dans le quartier historique ou les nouveaux secteurs de La Prairie, les intempéries du Québec ne pardonnent pas. Des gouttières obstruées peuvent causer des dommages coûteux. Nous offrons un service complet de nettoyage de gouttières à La Prairie.",
       "service_list_title": "L'avantage Entretiens Grondin à La Prairie :",
@@ -128,8 +128,8 @@
       "detailed_process": "À La Prairie, nous adaptons notre méthode aux maisons du noyau plus ancien comme aux propriétés des nouveaux développements. Nous commençons par inspecter la ligne de gouttières au complet pour identifier les zones de surcharge, les sections mal évacuées et les descentes ralenties par des accumulations de débris. Une fois la sécurité installée, nous positionnons les échelles avec stabilisateurs pour protéger votre revêtement et travailler efficacement sur chaque façade. Le nettoyage principal est réalisé à la main pour retirer feuilles, branchages et boue sans endommager les attaches. Nous poursuivons avec un rinçage progressif afin de vérifier le passage de l'eau dans chaque descente et détecter d'éventuels reflux. En fin d'intervention, nous ramassons l'ensemble des résidus au sol et nous vous donnons des conseils concrets pour planifier l'entretien du printemps et de l'automne selon l'environnement de votre rue."
     },
     "chambly": {
-      "meta_title": "Nettoyage de gouttières à Chambly | Débouchage & Pare-feuilles",
-      "meta_description": "Protégez votre maison à Chambly contre l'humidité et les débordements. Service professionnel de nettoyage de gouttières et pose de protège-gouttières.",
+      "meta_title": "Entretien gouttières Chambly | Pare-feuilles et Débouchage",
+      "meta_description": "Protégez vos fondations contre l'humidité du bassin. Service professionnel de nettoyage de gouttières et pose de filtres à Chambly.",
       "h1": "Nettoyage de gouttières et débouchage à Chambly",
       "intro_paragraph": "La proximité du bassin et de la rivière Richelieu apporte beaucoup d'humidité, ce qui accélère la décomposition des feuilles. Un système bouché peut causer des infiltrations. Nous offrons un service rapide de nettoyage de gouttières à Chambly.",
       "service_list_title": "Nos services d'entretien à Chambly :",
@@ -140,8 +140,8 @@
       "detailed_process": "À Chambly, l'humidité et les vents provenant du bassin et de la rivière favorisent des dépôts compacts dans les gouttières. Pour cette raison, notre équipe commence toujours par une inspection complète des sections les plus exposées, incluant les angles de toiture et les descentes susceptibles de se boucher rapidement. Nous installons nos échelles de manière sécuritaire avec des points d'appui protégés afin de prévenir tout dommage au parement extérieur. Le nettoyage est ensuite effectué à la main pour retirer les masses organiques sans déformer les profils de gouttière. Nous enchaînons avec un rinçage contrôlé qui permet de décoller les résidus fins et de vérifier le débit continu jusqu'au rejet final. Avant de quitter, nous nettoyons les surfaces autour de la maison et nous validons avec vous les recommandations d'entretien préventif pour traverser les périodes de pluie et de gel sans débordement."
     },
     "sainte-julie": {
-      "meta_title": "Nettoyage de gouttières Sainte-Julie | Entretien Préventif",
-      "meta_description": "Experts en nettoyage de gouttières et installation de pare-feuilles à Sainte-Julie. Évitez les infiltrations d'eau grâce à notre service rapide.",
+      "meta_title": "Nettoyage gouttières Sainte-Julie | Évitez les infiltrations",
+      "meta_description": "Spécialistes en entretien résidentiel à Sainte-Julie : retrait des feuilles, débouchage des descentes et installation de pare-feuilles durables.",
       "h1": "Service expert de nettoyage de gouttières à Sainte-Julie",
       "intro_paragraph": "Sainte-Julie est entourée de nature, signifiant que vos descentes se remplissent de feuilles, d'épines et de samares. Si l'eau déborde, vos fondations sont à risque. Notre équipe effectue le nettoyage complet de vos gouttières à Sainte-Julie.",
       "service_list_title": "Pourquoi nous choisir à Sainte-Julie :",
@@ -152,8 +152,8 @@
       "detailed_process": "À Sainte-Julie, nous intervenons souvent sur des propriétés entourées de végétation ou exposées aux rafales saisonnières. Notre méthode débute par une inspection visuelle des corniches, des descentes et des points de fixation afin d'identifier les obstructions et les sections qui nécessitent une attention immédiate. Nous installons ensuite des échelles avec stabilisateurs pour assurer une intervention stable tout en préservant le revêtement et les bordures de toiture. Le retrait des débris se fait manuellement, de façon précise, pour éliminer feuilles, aiguilles et boue sans abîmer les matériaux. Nous poursuivons avec un rinçage à pression maîtrisée afin de vérifier que chaque descente évacue correctement l'eau de pluie. Une fois le circuit validé, nous ramassons l'ensemble des déchets végétaux autour de la maison et nous vous remettons des conseils pratiques pour maintenir un système performant entre deux visites."
     },
     "beloeil": {
-      "meta_title": "Nettoyage de gouttières Beloeil | Lavage et Débouchage",
-      "meta_description": "Service de lavage de gouttières résidentiel à Beloeil. Protégez votre toiture avec notre nettoyage complet et l'installation de protège-gouttières.",
+      "meta_title": "Lavage de gouttières résidentiel à Beloeil | Soumission gratuite",
+      "meta_description": "Protégez votre investissement immobilier à Beloeil. Inspection, nettoyage complet et solutions durables contre les gouttières obstruées.",
       "h1": "Lavage et nettoyage de gouttières professionnel à Beloeil",
       "intro_paragraph": "Exposées aux vents de la rivière Richelieu, les maisons de Beloeil nécessitent un entretien rigoureux. Des gouttières obstruées peuvent mener à des fissures de fondation. Les Entretiens Grondin vous offrent un service de nettoyage à Beloeil sur lequel vous pouvez compter.",
       "service_list_title": "Nos solutions pour les résidents de Beloeil :",
@@ -165,7 +165,7 @@
     }
   },
   "header": {
-    "logoAlt": "logo de Gouttière Rive-Sud",
+    "logoAlt": "Logo Les Entretiens Grondin",
     "nav": {
       "home": "Accueil",
       "services": "Services",
@@ -278,8 +278,8 @@
       "phoneTitle": "Téléphone :",
       "emailTitle": "Email :",
       "socialTitle": "Suivez-Nous :",
-      "logoAlt": "logo des entretiens Grondin dans la Rive-Sud",
-      "facebookAria": "Voir la page facebook Entretiens Gouttières Rive-Sud"
+      "logoAlt": "Logo Les Entretiens Grondin dans le pied de page",
+      "facebookAria": "Ouvrir la page Facebook des Entretiens Grondin"
     },
     "form": {
       "invalidEmail": "Veuillez entrer une adresse email valide",
@@ -298,8 +298,8 @@
   },
   "nextPages": {
     "index": {
-      "headTitle": "Entretien de gouttières Grondin - Rive-Sud",
-      "headDescription": "Nettoyage de gouttières et installation de pare-feuilles sur la Rive-Sud. Service rapide, fiable et préventif.",
+      "headTitle": "Nettoyage gouttières Rive-Sud | Soumission gratuite",
+      "headDescription": "Nettoyage de gouttières, débouchage et installation de pare-feuilles sur la Rive-Sud. Service rapide avec soumission gratuite.",
       "heroTitle": "Gouttière Rive-sud",
       "heroSubtitle": "Les Entretiens Grondin",
       "heroWeek": "Ouvert du lundi au vendredi",
@@ -341,25 +341,25 @@
         {
           "title": "Expériences et expertises",
           "text": "Notre équipe expérimentée utilise des méthodes et équipements professionnels pour nettoyer les gouttières efficacement et en toute sécurité.",
-          "alt": "Eau qui tombe d'une gouttière pas entretenue."
+          "alt": "Gouttière remplie d'eau qui déborde le long de la façade"
         },
         {
           "title": "Service complet",
           "text": "Nous offrons un service complet sur la Rive-Sud, incluant inspection, nettoyage et réparations pour assurer un fonctionnement optimal.",
-          "alt": "Pluie qui tombe sur une maison avec ses gouttières entretenues."
+          "alt": "Pluie sur le toit d'une maison avec gouttières en bon état"
         },
         {
           "title": "Satisfaction du client",
           "text": "Notre entreprise met la satisfaction client au coeur de chaque intervention avec un service fiable, rapide et professionnel.",
-          "alt": "Feuilles d'arbre qui peuvent s'accumuler dans les gouttières."
+          "alt": "Feuilles mortes accumulées dans une gouttière"
         }
       ],
       "heroWeekHours": "7:30 - 17:00",
       "heroWeekendHours": "9:00 - 17:00"
     },
     "services": {
-      "headTitle": "Nos services d'entretien de gouttière - Rive-Sud",
-      "headDescription": "Découvrez nos services de nettoyage de gouttières, installation de pare-feuilles et entretien préventif sur la Rive-Sud.",
+      "headTitle": "Services gouttières | Débouchage et pare-feuilles",
+      "headDescription": "Découvrez nos services de nettoyage de gouttières, débouchage et installation de pare-feuilles sur la Rive-Sud. Soumission gratuite.",
       "topTitle": "Nos Services",
       "topText": "Le nettoyage de gouttières est une tâche souvent négligée, mais c'est une partie importante de l'entretien de la maison. Les gouttières obstruées peuvent causer des dommages importants et des infiltrations.",
       "offersTitle": "Offres de services",
@@ -378,11 +378,11 @@
       "guardText": "L'installation de pare-feuilles aide à protéger votre maison contre les débris et les débordements, tout en réduisant la fréquence de nettoyage.",
       "subscriptionTitle": "Nettoyage par abonnement",
       "subscriptionText": "Notre service par abonnement planifie des nettoyages réguliers pour assurer le bon fonctionnement de vos gouttières toute l'année.",
-      "imageAlt": "Maison en forêt sur la Rive-Sud avec des feuilles qui tombent dans les gouttières"
+      "imageAlt": "Maison entourée d'arbres avec feuilles tombant près des gouttières"
     },
     "contact": {
-      "headTitle": "Contactez-nous pour vos besoins en gouttières",
-      "headDescription": "Besoin d'aide pour nettoyer ou installer des gouttières? Contactez notre équipe pour des conseils et une assistance professionnelle.",
+      "headTitle": "Contact | Nettoyage gouttières et soumission gratuite",
+      "headDescription": "Parlez à notre équipe pour nettoyage de gouttières, débouchage ou installation de pare-feuilles. Réponse rapide et soumission gratuite.",
       "title": "Contactez-Nous",
       "openHours": "Heures d'ouvertures",
       "openWeek": "Lundi au vendredi de 7h30 à 17h00",
@@ -402,8 +402,8 @@
       "conclusion": "En tant qu'experts en nettoyage de gouttières de confiance, nous opérons dans la Rive-Sud de Montréal. Contactez Les Entretiens Grondin dès aujourd'hui."
     },
     "faq": {
-      "headTitle": "FAQ - Réponses à vos questions sur l'entretien de vos gouttières",
-      "headDescription": "Consultez notre FAQ pour obtenir des réponses aux questions courantes sur le nettoyage de gouttières sur la Rive-Sud.",
+      "headTitle": "FAQ nettoyage de gouttières | Rive-Sud",
+      "headDescription": "Réponses sur le nettoyage de gouttières, le débouchage et les pare-feuilles pour les maisons de la Rive-Sud.",
       "topTitle": "FAQ",
       "topText": "Bienvenue dans notre FAQ sur l'entretien des gouttières ! Nous répondons aux questions fréquentes pour vous aider à entretenir votre système de drainage efficacement.",
       "conclusion": [
@@ -499,8 +499,8 @@
       ]
     },
     "realisation": {
-      "headTitle": "Réalisations avant/après nettoyage de gouttières | Rive-Sud",
-      "headDescription": "Avant/après de nettoyage de gouttières sur la Rive-Sud de Montréal : Longueuil, Brossard, Boucherville, La Prairie, Chambly et plus.",
+      "headTitle": "Réalisations nettoyage gouttières | Avant/Après",
+      "headDescription": "Découvrez nos avant/après en nettoyage de gouttières et débouchage dans les villes de la Rive-Sud.",
       "heading": "Réalisations Avant/Après",
       "lead": "Découvrez nos interventions réelles avant/après en nettoyage de gouttières sur la Rive-Sud, avec des résultats concrets sur différents types de propriétés.",
       "items": [
@@ -508,80 +508,80 @@
           "city": "Longueuil",
           "title": "Avant/Après nettoyage complet de gouttières à Longueuil",
           "description": "Dans ce secteur résidentiel de Longueuil, les samares et feuilles humides bloquaient plusieurs sections de gouttières. Nous avons retiré l'accumulation, débouché les descentes et rétabli un drainage régulier loin des fondations.",
-          "alt_before": "Avant nettoyage de gouttière résidentielle obstruée par des feuilles humides et des samares à Longueuil",
-          "alt_after": "Après nettoyage de gouttière propre avec écoulement rétabli à Longueuil"
+          "alt_before": "Gouttière obstruée par feuilles humides et samares avant intervention à Longueuil",
+          "alt_after": "Gouttière dégagée après nettoyage à Longueuil, avec écoulement rétabli"
         },
         {
           "city": "Brossard",
           "title": "Avant/Après débouchage d'urgence de gouttières à Brossard",
           "description": "Cette propriété de Brossard présentait un débordement majeur après de fortes pluies. Nous avons retiré plusieurs années de feuilles compactées pour éliminer le blocage et sécuriser l'évacuation de l'eau.",
-          "alt_before": "Avant débouchage : gouttière à Brossard complètement bouchée par un amas de feuilles",
-          "alt_after": "Après débouchage : gouttière dégagée et fonctionnelle à Brossard"
+          "alt_before": "Gouttière bouchée par un amas de feuilles avant débouchage à Brossard",
+          "alt_after": "Gouttière propre et dégagée après débouchage à Brossard"
         },
         {
           "city": "Boucherville",
           "title": "Avant/Après retrait de boue et débris à Boucherville",
           "description": "À Boucherville, les gouttières étaient remplies de boue, de feuilles collées et de petites branches. Notre équipe a effectué un nettoyage en profondeur pour prévenir les infiltrations d'eau autour de la toiture.",
-          "alt_before": "Avant intervention : gouttière remplie de boue et de débris végétaux à Boucherville",
-          "alt_after": "Après intervention : système de gouttière nettoyé et remis en service à Boucherville"
+          "alt_before": "Gouttière remplie de boue et de débris végétaux avant intervention à Boucherville",
+          "alt_after": "Gouttière nettoyée et remise en service après intervention à Boucherville"
         },
         {
           "city": "Saint-Bruno-de-Montarville",
           "title": "Avant/Après nettoyage de printemps à Saint-Bruno",
           "description": "Près du Mont Saint-Bruno, les aiguilles de conifères et les brindilles avaient réduit le débit des descentes. Nous avons nettoyé les canaux et ajusté l'écoulement pour éviter les débordements lors des pluies de saison.",
-          "alt_before": "Avant nettoyage : accumulation d'aiguilles de conifères dans une gouttière à Saint-Bruno-de-Montarville",
-          "alt_after": "Après nettoyage : gouttière libérée des aiguilles et prête pour la saison des pluies à Saint-Bruno-de-Montarville"
+          "alt_before": "Aiguilles de conifères accumulées dans une gouttière avant nettoyage à Saint-Bruno-de-Montarville",
+          "alt_after": "Gouttière dégagée des aiguilles après nettoyage à Saint-Bruno-de-Montarville"
         },
         {
           "city": "Candiac",
           "title": "Avant/Après entretien préventif et rinçage à Candiac",
           "description": "Sur cette maison de Candiac, les feuilles d'automne et les résidus de toiture ralentissaient le drainage. Nous avons fait le nettoyage manuel, le rinçage complet et la vérification des descentes pour prévenir les barrages de glace.",
-          "alt_before": "Avant entretien : gouttière partiellement bloquée par des feuilles et granules de bardeau à Candiac",
-          "alt_after": "Après entretien : gouttière rincée avec débit d'eau fluide à Candiac"
+          "alt_before": "Gouttière partiellement bloquée par feuilles et granules avant entretien à Candiac",
+          "alt_after": "Gouttière rincée avec écoulement fluide après entretien à Candiac"
         },
         {
           "city": "Saint-Lambert",
           "title": "Avant/Après intervention sur maison patrimoniale à Saint-Lambert",
           "description": "Cette résidence de Saint-Lambert nécessitait une approche délicate en raison d'une corniche ancienne. Nous avons retiré les débris accumulés et sécurisé l'écoulement sans endommager les éléments patrimoniaux.",
-          "alt_before": "Avant intervention : corniche patrimoniale avec gouttière encombrée de feuilles à Saint-Lambert",
-          "alt_after": "Après intervention : gouttière nettoyée avec finition soignée sur maison patrimoniale à Saint-Lambert"
+          "alt_before": "Corniche de maison patrimoniale avec gouttière encombrée avant intervention à Saint-Lambert",
+          "alt_after": "Gouttière nettoyée avec corniche préservée après intervention à Saint-Lambert"
         },
         {
           "city": "La Prairie",
           "title": "Avant/Après remise en débit des gouttières à La Prairie",
           "description": "Sur cette propriété de La Prairie, des dépôts organiques compacts bloquaient plusieurs points d'évacuation. Le nettoyage manuel suivi d'un rinçage contrôlé a rétabli un écoulement stable.",
-          "alt_before": "Avant nettoyage de gouttières à La Prairie avec débris compacts dans les descentes",
-          "alt_after": "Après nettoyage de gouttières à La Prairie avec écoulement rétabli"
+          "alt_before": "Débris compacts dans les descentes de gouttières avant nettoyage à La Prairie",
+          "alt_after": "Écoulement rétabli dans les gouttières après nettoyage à La Prairie"
         },
         {
           "city": "Chambly",
           "title": "Avant/Après nettoyage haute capacité à Chambly",
           "description": "À Chambly, l'humidité et les feuilles accumulées provoquaient des débordements répétés. Nous avons dégagé les canaux, validé les descentes et sécurisé le drainage autour des fondations.",
-          "alt_before": "Avant intervention à Chambly : gouttière surchargée de feuilles humides",
-          "alt_after": "Après intervention à Chambly : gouttière propre avec drainage optimisé"
+          "alt_before": "Gouttière surchargée de feuilles humides avant intervention à Chambly",
+          "alt_after": "Gouttière propre avec drainage amélioré après intervention à Chambly"
         },
         {
           "city": "Sainte-Julie",
           "title": "Avant/Après entretien saisonnier de gouttières à Sainte-Julie",
           "description": "Cette intervention à Sainte-Julie visait à retirer un mélange d'aiguilles et de boue fine avant l'hiver. Le rinçage final a confirmé une évacuation complète sur toute la ligne.",
-          "alt_before": "Avant entretien à Sainte-Julie : accumulation d'aiguilles et de boue dans la gouttière",
-          "alt_after": "Après entretien à Sainte-Julie : gouttière dégagée et prête pour la saison froide"
+          "alt_before": "Aiguilles et boue accumulées dans la gouttière avant entretien à Sainte-Julie",
+          "alt_after": "Gouttière dégagée et prête pour l'hiver après entretien à Sainte-Julie"
         },
         {
           "city": "Beloeil",
           "title": "Avant/Après assainissement complet des descentes à Beloeil",
           "description": "À Beloeil, les descentes pluviales présentaient des ralentissements importants. Nous avons retiré les obstructions, testé le débit et restauré la performance globale du système.",
-          "alt_before": "Avant assainissement à Beloeil : descente pluviale ralentie par des obstructions",
-          "alt_after": "Après assainissement à Beloeil : descente pluviale fluide et gouttière propre"
+          "alt_before": "Descente pluviale ralentie par des obstructions avant assainissement à Beloeil",
+          "alt_after": "Descente pluviale fluide et gouttière propre après assainissement à Beloeil"
         }
       ]
     },
     "comment": {
-      "headTitle": "Nettoyer ses gouttières - Guide complet pour un toit parfaitement propre",
-      "headDescription": "Découvrez comment nettoyer vos gouttières facilement et efficacement. Notre guide complet vous offre des astuces et des outils pour un toit parfaitement propre en toute sécurité. Entretien de gouttière Grondin Rive-Sud. Téléphone : 1-888-851-6871",
+      "headTitle": "Comment nettoyer ses gouttières | Guide pratique",
+      "headDescription": "Guide pratique pour nettoyer vos gouttières en sécurité, reconnaître les risques et savoir quand appeler un professionnel.",
       "accueilTitle": "Comment Nettoyer Ses Gouttières",
       "accueilSubtitle": "Le nettoyage de gouttière peut comporter des risques si vous n'êtes pas équipé ou expérimenté pour travailler en hauteur. Dans cet article, nous allons vous montrer les étapes pour nettoyer vos gouttières en toute sécurité et efficacement. Bien que le nettoyage des gouttières puisse être fait soi-même, choisir un expert pour le faire peut être la meilleure solution pour éviter les risques et s'assurer d'un nettoyage en profondeur.",
-      "accueilAlt": "Maison avec des gouttières entretenues par gouttiere Rive Sud",
+      "accueilAlt": "Maison résidentielle avec gouttières propres après entretien",
       "risksTitle": "Les risques de le faire soi-même",
       "risksItems": [
         {
@@ -649,11 +649,11 @@
       ]
     },
     "pourquoi": {
-      "headTitle": "Pourquoi nettoyer ses gouttières ? - Gouttières Rive-Sud",
-      "headDescription": "Découvrez pourquoi il est important d'entretenir régulièrement vos gouttières. Notre guide vous offre des avantages, des astuces et des outils pour maintenir vos gouttières en bon état et prévenir les dommages potentiels à votre toit et votre maison. Entretien de gouttière Grondin Rive-Sud. Téléphone : 1-888-851-6871",
+      "headTitle": "Pourquoi nettoyer ses gouttières | Guide",
+      "headDescription": "Comprenez comment l'entretien des gouttières protège toiture et fondations, et évite infiltrations, moisissures et réparations coûteuses.",
       "accueilTitle": "Dommages aux gouttières : Tout ce que vous devez savoir",
       "accueilSubtitle": "Pour assurer l'efficacité de vos gouttières tout au long de l'année, il est crucial de les entretenir régulièrement. Cela permettra de prolonger leur durée de vie et d'éviter des coûts de réparation ou même de remplacement complet en cas de dommages importants. Voici quelques problèmes courants liés aux gouttières, ainsi que les solutions appropriées pour y faire face.",
-      "accueilAlt": "Maison luxueuse de longueuil nettoyée par les Entretiens Grondin Rive-Sud",
+      "accueilAlt": "Maison résidentielle avec toiture et gouttières en bon état",
       "texte": [
         {
           "titre": "Fissures et déformations",
@@ -668,7 +668,7 @@
           "text": "L'accumulation de neige, la formation de glace en bordure du toit et la dégradation des supports des gouttières peuvent entraîner leur affaissement et leur perte d'efficacité. Pour résoudre ce problème, il est souvent nécessaire d'ajouter des clous ou des crochets aux bons endroits pour renforcer le système de gouttières. Cela peut être effectué par soi-même avec le matériel approprié, mais il est préférable de faire appel à un professionnel pour s'assurer que les fixations sont placées aux bons endroits et qu'il y en a suffisamment. Une inspection régulière permet de détecter les dommages et de planifier leur réparation avant qu'ils ne deviennent plus importants."
         }
       ],
-      "precipitationAlt": "Accumulation des precipitations dans la Rive-Sud",
+      "precipitationAlt": "Eau de pluie qui s'accumule au bord d'une gouttière",
       "texte1": [
         {
           "titre": "Dommages causés à la toiture",
@@ -679,7 +679,7 @@
           "text": "Les descentes d'eau pluviale sont conçues pour diriger l'eau à au moins 1,5 mètre de la maison, voire plus si la pente du terrain ramène l'eau vers la maison. Cependant, si les gouttières ne font pas leur travail adéquatement en raison d'une mauvaise installation ou d'une détérioration, l'eau qui déborde et tombe toujours aux mêmes endroits trop près des fondations peut éroder ou compacter le sol au fil du temps. Les dépressions ainsi créées permettront à l'eau de s'y accumuler."
         }
       ],
-      "roofAlt": "Toiture abimé et la gouttière pleines de débris qui va se faire nettoyer par gouttière Rive-Sud",
+      "roofAlt": "Toiture avec gouttière remplie de débris avant nettoyage",
       "texteP": [
         {
           "text": "Au Québec, les maisons sont généralement construites sans barrière d'étanchéité posée contre le béton poreux des fondations. L'augmentation de la quantité d'eau dans le sol près des fondations peut contribuer aux problèmes d'humidité dans le sous-sol de la maison. Si l'eau n'est pas correctement drainée, elle peut même s'infiltrer dans le sous-sol et causer des dommages importants. Dans des cas extrêmes, l'eau gelée dans le sol peut adhérer aux fondations et provoquer des dommages structurels tels que des fissures. Il est même possible qu'une section de la maison, comme le garage, soit soulevée de quelques millimètres."
@@ -706,11 +706,11 @@
       ]
     },
     "quand": {
-      "headTitle": "Quand nettoyer ses gouttières ? - Gouttière Rive-Sud",
-      "headDescription": "Découvrez nos conseils pratiques pour savoir quand nettoyer vos gouttières. Apprenez à identifier les signes de gouttières sales et obstruées, et découvrez à quelle fréquence vous devriez les nettoyer pour maintenir un toit propre et prévenir les dommages potentiels. Entretien de gouttière Grondin Rive-Sud.",
+      "headTitle": "Quand nettoyer ses gouttières | Conseils",
+      "headDescription": "Repérez les signes d'obstruction et la fréquence idéale de nettoyage des gouttières au printemps et à l'automne.",
       "accueilTitle": "Quand Nettoyer Ses Gouttières ?",
       "accueilSubtitle": "Dans la plupart des cas, le nettoyage des gouttières devrait être exécuté idéalement deux fois par année. Un entretien déficient peut engendrer de lourdes et coûteuses conséquences. Consultez cette page pour connaître les multiples raisons pour lesquelles vous avez avantage à nettoyer vos gouttières régulièrement.",
-      "accueilAlt": "Gouttière qui déborde dans la région de la Rive-Sud",
+      "accueilAlt": "Gouttière qui déborde pendant la pluie",
       "titresEtTextesH2": [
         {
           "titre": "Quand nettoyer les gouttières? ",
@@ -725,7 +725,7 @@
         "L'eau ne s'écoule pas correctement lorsque vous arrosez votre pelouse ou vos plantes.",
         "Vous voyez des fissures ou des dommages sur vos gouttières."
       ],
-      "firstImageAlt": "Homme à l'emploie de Gouttiere Rive-Sud qui nettoye une gouttière",
+      "firstImageAlt": "Technicien sur échelle en train de nettoyer une gouttière",
       "frequencyBoxTitle": "À quelle fréquence nettoyer les gouttières ?",
       "frequencyBoxTexts": [
         "En général, il est recommandé de nettoyer vos gouttières au moins deux fois par an, une fois au printemps et une fois à l'automne. Cependant, cela peut varier en fonction des conditions climatiques et du nombre d'arbres autour de votre maison. Si vous habitez dans une région où il pleut beaucoup ou si vous avez beaucoup d'arbres, vous devrez peut-être nettoyer vos gouttières plus souvent."
@@ -757,7 +757,7 @@
           "texte": "Si vous n'êtes pas à l'aise avec l'idée de nettoyer vos gouttières vous-même, ou si vous n'avez pas le temps ou l'équipement nécessaires, il est recommandé de faire appel à un professionnel pour le faire pour vous. Les professionnels peuvent inspecter vos gouttières, réparer les dommages et nettoyer les débris en toute sécurité."
         }
       ],
-      "secondImageAlt": "Eau qui s'accumule dans une gouttière nettoyé par gouttière Rive-Sud",
+      "secondImageAlt": "Eau stagnante dans une gouttière partiellement obstruée",
       "titresEtTextesH22": [
         {
           "titre": "Entretien régulier de vos gouttières",
@@ -779,11 +779,11 @@
       "borderText": "Outre le nettoyage régulier des gouttières, l'installation de protège-gouttières est une solution alternative efficace pour minimiser les problèmes de gouttières obstruées et réduire la nécessité d'un entretien fréquent. Les protège-gouttières peuvent empêcher les feuilles et les débris de pénétrer dans les gouttières, ce qui permet à l'eau de s'écouler librement. Bien qu'ils puissent être coûteux à installer, leur utilisation est un investissement rentable à long terme car ils prolongent la durée de vie des gouttières et empêchent les problèmes de drainage qui peuvent endommager la fondation de la maison. En outre, les protège-gouttières nécessitent peu d'entretien et éliminent le besoin de nettoyages fréquents et fastidieux. Profitez dès maintenant de l'installation de protège-gouttières pour un système de gouttières efficace et sans soucis!"
     },
     "gestion": {
-      "headTitle": "Guide complet pour bien entretenir ses gouttières - Rive-Sud",
-      "headDescription": "Découvrez pourquoi l'entretien de vos gouttières est essentiel pour protéger votre maison sur la Rive-Sud. Apprenez quand et comment nettoyer vos gouttières, les avantages d'un nettoyage professionnel et si vous devriez envisager de le faire vous-même. Entretien Grondin - Rive-Sud. Téléphone : 1-888-851-6871",
+      "headTitle": "Guide entretien des gouttières | Maison protégée",
+      "headDescription": "Guide complet sur l'entretien des gouttières: fréquence, prévention, nettoyage professionnel et protection contre les infiltrations.",
       "accueilTitle": "Un guide complet pour la gestion de vos gouttières.",
       "accueilSubtitle": "La gestion et l'entretien efficaces de vos gouttières sont primordiaux pour la préservation de l'intégrité structurelle de votre maison. Cet article vous guidera à travers les points essentiels concernant l'importance des gouttières pour l'écoulement de l'eau de pluie, la nécessité d'un entretien régulier, et les bénéfices d'un nettoyage professionnel. De plus, nous aborderons les problèmes liés à un nettoyage de gouttières réalisé par soi-même et les précautions à prendre.",
-      "accueilAlt": "Gouttières nettoyées par les entretiens grondins dans la Rive-Sud",
+      "accueilAlt": "Gouttières nettoyées le long d'une maison résidentielle",
       "content": [
         {
           "titre": "L'importance des gouttières pour l'écoulement de l'eau de pluie",
@@ -806,7 +806,7 @@
           "text": "Un nettoyage professionnel de gouttières peut également vous aider à identifier les réparations mineures nécessaires avant qu'elles ne deviennent des problèmes majeurs, économisant ainsi du temps et de l'argent à long terme."
         }
       ],
-      "middleImageAlt": "Maison d'un client qui à fait appel à Gouttières Grondins Rive-Sud",
+      "middleImageAlt": "Maison résidentielle d'un client après intervention",
       "content2": [
         {
           "titre": "La fréquence de nettoyage de vos gouttières",
@@ -847,14 +847,14 @@
       "helpMiddle": ". Nous proposons un large éventail de",
       "helpServicesLabel": "services",
       "helpEnd": ", y compris le nettoyage, l'installation et la réparation de gouttières.",
-      "finalImageAlt": "Gouttières fraîchement lavée par Gouttière Grondin Rive-Sud"
+      "finalImageAlt": "Gouttière fraîchement nettoyée avec bordure propre"
     },
     "types": {
-      "headTitle": "Les différents types de gouttières - Gouttière Rive-Sud",
-      "headDescription": "Découvrez notre guide d'achat complet sur les différents types de gouttières disponibles sur le marché. Apprenez-en plus sur les avantages et les inconvénients des différents matériaux de gouttières, les styles et les formes disponibles, ainsi que les facteurs à considérer pour choisir les meilleures gouttières pour votre maison. - Gouttière Rive-Sud",
+      "headTitle": "Types de gouttières | Comparatif matériaux",
+      "headDescription": "Comparez les gouttières en PVC, aluminium, cuivre et acier pour choisir la meilleure option selon votre maison et votre budget.",
       "accueilTitle": "Les différents types de gouttières",
       "accueilSubtitle": "Lorsque vous choisissez des gouttières pour votre maison, vous disposez de plusieurs options, chacune ayant ses avantages et ses inconvénients. Dans cet article, nous allons explorer les différents types de gouttières et vous aider à choisir la meilleure option pour votre maison.",
-      "accueilAlt": "Gouttière qui déborde dans la région de la Rive Sud",
+      "accueilAlt": "Gouttière qui déborde sous une forte pluie",
       "sectionTitle": "Sélection de gouttières",
       "itemsList": [
         {
@@ -880,8 +880,8 @@
       ]
     },
     "infoGouttieres": {
-      "headTitle": "Tout savoir sur les gouttières : guide pratique - Gouttières Rive-Sud",
-      "headDescription": "Découvrez tout ce que vous devez savoir sur les gouttières dans notre guide pratique. Apprenez comment les gouttières fonctionnent, comment les entretenir, les différents matériaux et styles disponibles sur le marché, et comment choisir les meilleures gouttières pour votre maison. - Gouttière Rive-Sud",
+      "headTitle": "Tout savoir sur les gouttières | Guide pratique",
+      "headDescription": "Fonctionnement, entretien et solutions pour vos gouttières: nettoyage, débouchage et choix des matériaux.",
       "topTitle": "Tout Savoir Sur Les Gouttières",
       "topText": "Les gouttières sont un élément important de votre toiture et de votre maison, mais les connaissez-vous vraiment ? Savez-vous comment elles fonctionnent pour protéger votre maison contre les dégâts d'eau ? Les gouttières permettent de recueillir l'eau de pluie et de la diriger loin de votre maison, évitant ainsi les dégâts d'eau, les infiltrations et les moisissures. Elles sont souvent négligées dans l'entretien de la maison, mais nettoyer régulièrement vos gouttières est essentiel pour assurer leur bon fonctionnement.",
       "whyTitle": "Pourquoi les gouttières sont-elles importantes ?",
@@ -892,7 +892,7 @@
       "whenTexts": [
         "Nettoyer régulièrement les gouttières est également crucial pour maintenir leur efficacité dans la protection de votre maison contre les dégâts d'eau. Les feuilles, les brindilles, les débris et les branches qui s'accumulent dans les gouttières peuvent obstruer le flux d'eau et provoquer des débordements et des fuites d'eau."
       ],
-      "leadImageAlt": "Protège-gouttière en métal dans la région de la Rive-Sud qui retiennent les détritus tombés des arbres",
+      "leadImageAlt": "Protège-gouttière métallique retenant les feuilles en surface",
       "cards": [
         {
           "title": "Dangers de nettoyer ses gouttières soi-même",
@@ -917,14 +917,14 @@
       "guardsTitle": "Quels sont les différents types de pare-feuilles? ",
       "guardsText": "Les pare-feuilles de gouttière sont des accessoires utiles qui empêchent les feuilles, les débris et autres saletés de boucher vos gouttières. Ils peuvent également réduire le risque d'incendie en empêchant les feuilles sèches et autres matières combustibles de s'accumuler dans vos gouttières. Il existe différents types de pare-feuilles de gouttière, chacun avec ses propres avantages et inconvénients en termes de durabilité, de coûts et d'efficacité.",
       "guardsLink": "/tout-savoir-sur-les-pare-feuilles",
-      "bottomImageAlt": "Protège-gouttière en métal dans la région de la Rive-Sud qui retiennent les détritus tombés des arbres"
+      "bottomImageAlt": "Vue rapprochée d'un protège-gouttière métallique en place"
     },
     "pareFeuilles": {
-      "headTitle": "Pare-feuilles pour gouttières : tout ce que vous devez savoir",
-      "headDescription": "Découvrez tout ce que vous devez savoir sur les pare-feuilles pour gouttières. Notre guide complet vous offre des informations sur les avantages, les types de pare-feuilles disponibles sur le marché, ainsi que des conseils pour choisir et installer le meilleur pare-feuilles pour votre maison. - Gouttière Rive-Sud",
+      "headTitle": "Pare-feuilles gouttières | Guide et avantages",
+      "headDescription": "Tout savoir sur les pare-feuilles: avantages, types et conseils d'installation pour réduire les bouchons et l'entretien.",
       "accueilTitle": "Les avantages d'avoir des pare-feuilles de gouttières : pourquoi vous devriez en avoir ?",
       "accueilSubtitle": "Les pare-feuilles de gouttières sont des dispositifs conçus pour empêcher les feuilles, les branches et autres débris de se coincer dans les gouttières de votre maison. Dans cet article, nous allons explorer les nombreux avantages d'avoir des pare-feuilles de gouttières et vous expliquer pourquoi vous devriez en avoir un.",
-      "accueilAlt": "Pluie qui tombe dans une gouttière dans la region de la Rive-Sud",
+      "accueilAlt": "Pluie qui tombe dans une gouttière équipée d'un pare-feuilles",
       "installationTitle": "Installation de pare-feuilles Rive-Sud",
       "installationTexts": [
         "Vous cherchez une entreprise fiable et expérimentée pour l'installation de pare-feuille dans la région de la Rive-Sud ? Ne cherchez plus ! Les Entretiens Grondin sont à votre service. Nous mettons notre expertise et notre savoir-faire à votre disposition pour vous garantir une prestation de qualité. Nous vous invitons à nous contacter pour obtenir une soumission gratuite ou pour prendre rendez-vous afin que nos experts puissent évaluer vos besoins et vous proposer une solution adaptée. Chez Les Entretiens Grondin, votre satisfaction est notre priorité !"
@@ -956,7 +956,7 @@
           "texte": "Les pare-feuilles de gouttières peuvent également améliorer l'apparence de votre maison en empêchant les débris de s'accumuler sur vos gouttières. Cela peut donner à votre maison un aspect plus propre et plus soigné, ce qui peut augmenter sa valeur de revente et améliorer son attrait visuel."
         }
       ],
-      "imageTopAlt": "Feuilles qui tombent dans les gouttières non-protegées de la Rive-Sud de Montreal",
+      "imageTopAlt": "Feuilles mortes sur une gouttière sans protection",
       "typesIntroTitle": "Les différent types de pare-feuilles",
       "typesIntroTexts": [
         "Maintenant que nous avons vu les différents avantages des pare-feuilles de gouttières, passons à la prochaine étape : les différents types de pare-feuilles. Il existe une variété de matériaux et de styles disponibles pour les gouttières, chacun avec ses propres avantages et inconvénients. Dans cette section, nous allons explorer les différents types de pare-feuilles pour vous aider à choisir celui qui convient le mieux à votre maison."
@@ -983,12 +983,12 @@
           "texte": "Les pare-feuilles en plastique sont une solution pratique pour éviter les problèmes causés par les feuilles et les débris qui s'accumulent dans les gouttières. Ils sont fabriqués à partir de matériaux tels que le polycarbonate ou le PVC, qui sont résistants et durables. L'installation des pare-feuilles en plastique est également très simple, car ils sont conçus pour s'adapter facilement à l'intérieur de la gouttière. Une fois installés, ils sont très efficaces pour empêcher les feuilles et les autres débris de pénétrer dans la gouttière, ce qui peut causer des obstructions et des problèmes de drainage. En fin de compte, l'utilisation de pare-feuilles en plastique peut aider à prolonger la durée de vie de votre gouttière et à réduire les coûts d'entretien à long terme."
         }
       ],
-      "imageBottomAlt": "Installation de pare-feuilles par entretien gouttiere Rive-Sud"
+      "imageBottomAlt": "Technicien installant un pare-feuilles sur une gouttière"
     }
   },
   "layout": {
     "schemaDescription": "Nettoyage de gouttières, débouchage, installation de protège-gouttières et entretien préventif sur la Rive-Sud de Montréal pour limiter les infiltrations d'eau.",
     "servicesCatalogName": "Services de gouttières",
-    "mainNavAria": "Navigation principale"
+    "mainNavAria": "Navigation principale du site"
   }
 }

@@ -2,10 +2,11 @@ import imgAccueilGestion from "../public/img/gouttieres-entretenues-par-les-entr
 import imgConclusion from "../public/img/nettoyage-gouttiere-la-prairie-apres.jpg";
 import imgMaison from "../public/img/maison-qui-on-fait-appel-a-gouttiere-rive-sud.jpg";
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 
 const Header = dynamic(() => import("../component/Header"));
 const Footer = dynamic(() => import("../component/Footer"));
@@ -17,7 +18,13 @@ const ParagrapheArticle = dynamic(
 const ListeArticleH3 = dynamic(() => import("../component/ListeArticleH3"));
 
 function Gestion() {
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = getLocalizedPath("fr-CA", "/gestion-de-vos-gouttieres");
+  const enPath = getLocalizedPath("en", "/gestion-de-vos-gouttieres");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   const content = get("nextPages.gestion.content", []);
   const content1 = get("nextPages.gestion.content1", []);
@@ -27,19 +34,18 @@ function Gestion() {
 
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.gestion.headTitle")}</title>
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca/gestion-de-vos-gouttieres"
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content={t("nextPages.gestion.headDescription")}
-          key="description"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.gestion.headTitle")}
+        description={t("nextPages.gestion.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Header />
       <section id="accueil-gestion">
         <AccueilArticle

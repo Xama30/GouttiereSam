@@ -47,10 +47,10 @@ function Form() {
 
     try {
       await emailjs.sendForm(
-        "service_jhcswgq",
-        "template_u1b0xft",
+        "service_qh3ctbl",
+        "template_j68og7p",
         form.current,
-        "aFJ-p0FX1BN0fju-6",
+        "WYoiB5Brpq7kiUgwc",
       );
 
       clearFormFields();

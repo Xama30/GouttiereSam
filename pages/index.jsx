@@ -1,11 +1,12 @@
 import React from "react";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Images from "../public/img/Images";
 import { useNextI18n } from "../src/i18n/next-i18n-context";
+import { getLocalizedPath } from "../src/i18n/next-routes";
+import SeoHead from "../component/SeoHead";
 
 const Animation = dynamic(() => import("../component/Animation"));
 const Header = dynamic(() => import("../component/Header"));
@@ -17,29 +18,34 @@ const Card = dynamic(() => import("../component/Card"));
 const CarteForm = dynamic(() => import("../component/Carte_Form"));
 
 const Index = () => {
-  const { t, get } = useNextI18n();
+  const { t, get, lang } = useNextI18n();
   const citiesLeft = get("nextPages.index.citiesLeft", []);
   const citiesRight = get("nextPages.index.citiesRight", []);
   const servicesItems = get("nextPages.index.servicesItems", []);
   const cards = get("nextPages.index.cards", []);
   const cardImages = [Images.carte1, Images.carte2, Images.carte3];
   const cardSides = ["left", "right", "left"];
+  const siteUrl = "https://entretiensgouttieresrivesud.ca";
+  const isEnglish = lang === "en";
+  const frPath = getLocalizedPath("fr-CA", "/");
+  const enPath = getLocalizedPath("en", "/");
+  const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
+  const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
   return (
     <div>
-      <Head>
-        <title key="title">{t("nextPages.index.headTitle")}</title>
-        <link
-          rel="canonical"
-          href="https://entretiensgouttieresrivesud.ca"
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content={t("nextPages.index.headDescription")}
-          key="description"
-        />
-      </Head>
+      <SeoHead
+        title={t("nextPages.index.headTitle")}
+        description={t("nextPages.index.headDescription")}
+        url={canonical}
+        image="/logo.webp"
+        locale={ogLocale}
+        alternates={[
+          { hrefLang: "fr-CA", href: `${siteUrl}${frPath}` },
+          { hrefLang: "en-CA", href: `${siteUrl}${enPath}` },
+          { hrefLang: "x-default", href: `${siteUrl}${frPath}` },
+        ]}
+      />
       <Animation />
       <Header />
       <main>
