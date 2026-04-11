@@ -43,7 +43,7 @@ function ContactUs() {
       />
       <Header />
       <section id="#Contactez-nous" className="Top__ContactUs">
-        <h2>{t("nextPages.contact.title")}</h2>
+        <h1>{t("nextPages.contact.title")}</h1>
       </section>
       <section id="Icon_ContactUs">
         <Icon_H3_P

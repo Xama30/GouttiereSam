@@ -11,10 +11,12 @@ function toAbsoluteUrl(value) {
   }
 
   if (/^https?:\/\//i.test(value)) {
-    return value;
+    return value.endsWith("/") ? value : `${value}/`;
   }
 
-  return `${SITE_URL}${value.startsWith("/") ? "" : "/"}${value}`;
+  const path = value.startsWith("/") ? value : `/${value}`;
+  const normalizedPath = path.endsWith("/") ? path : `${path}/`;
+  return `${SITE_URL}${normalizedPath}`;
 }
 
 function SeoHead({

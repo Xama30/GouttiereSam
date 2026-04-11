@@ -116,7 +116,7 @@ const Index = () => {
             </ul>
           </div>
           <div className="right">
-            <VoirEnDt link="/nos-services" />
+            <VoirEnDt link="/nos-services/" />
           </div>
         </section>
 
@@ -127,7 +127,7 @@ const Index = () => {
             texts={get("nextPages.index.whyTexts", [])}
             detail="T"
             classNameBoxTxt="BoxTxt__Accueil"
-            route="/pourquoi-entretenir-ses-gouttieres"
+            route="/pourquoi-entretenir-ses-gouttieres/"
           />
           <BoxTxt
             color="L"
@@ -136,7 +136,7 @@ const Index = () => {
             className="boxTxt_L"
             detail="T"
             classNameBoxTxt="BoxTxt__Accueil"
-            route="/quand-nettoyer-ses-gouttieres"
+            route="/quand-nettoyer-ses-gouttieres/"
           />
         </section>
         <section id="section__carte">

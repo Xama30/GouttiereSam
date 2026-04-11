@@ -69,52 +69,52 @@
       {
         "key": "longueuil",
         "label": "Longueuil",
-        "href": "/en/longueuil"
+        "href": "/en/longueuil/"
       },
       {
         "key": "brossard",
         "label": "Brossard",
-        "href": "/en/brossard"
+        "href": "/en/brossard/"
       },
       {
         "key": "boucherville",
         "label": "Boucherville",
-        "href": "/en/boucherville"
+        "href": "/en/boucherville/"
       },
       {
         "key": "saint-bruno",
         "label": "Saint-Bruno-de-Montarville",
-        "href": "/en/saint-bruno"
+        "href": "/en/saint-bruno/"
       },
       {
         "key": "candiac",
         "label": "Candiac",
-        "href": "/en/candiac"
+        "href": "/en/candiac/"
       },
       {
         "key": "saint-lambert",
         "label": "Saint-Lambert",
-        "href": "/en/saint-lambert"
+        "href": "/en/saint-lambert/"
       },
       {
         "key": "la-prairie",
         "label": "La Prairie",
-        "href": "/en/la-prairie"
+        "href": "/en/la-prairie/"
       },
       {
         "key": "chambly",
         "label": "Chambly",
-        "href": "/en/chambly"
+        "href": "/en/chambly/"
       },
       {
         "key": "sainte-julie",
         "label": "Sainte-Julie",
-        "href": "/en/sainte-julie"
+        "href": "/en/sainte-julie/"
       },
       {
         "key": "beloeil",
         "label": "Beloeil",
-        "href": "/en/beloeil"
+        "href": "/en/beloeil/"
       }
     ],
     "language": {
@@ -177,7 +177,7 @@
   "nextPages": {
     "index": {
       "headTitle": "Gutter Maintenance Grondin - South Shore",
-      "headDescription": "Gutter cleaning and leaf-guard installation on the South Shore. Fast, reliable, preventive service.",
+      "headDescription": "Professional gutter cleaning, unclogging and leaf-guard installation on Montreal's South Shore. Fast, reliable service with free quotes.",
       "heroTitle": "South Shore Gutters",
       "heroSubtitle": "Les Entretiens Grondin",
       "heroWeek": "Open Monday to Friday",
@@ -237,7 +237,7 @@
     },
     "services": {
       "headTitle": "Our gutter maintenance services - South Shore",
-      "headDescription": "Discover our gutter cleaning, leaf-guard installation, and preventive maintenance services on the South Shore.",
+      "headDescription": "Discover our gutter cleaning, leaf-guard installation, and preventive maintenance services on Montreal's South Shore. Free estimate available.",
       "topTitle": "Our Services",
       "topText": "Gutter cleaning is often overlooked, but it is an important part of home maintenance. Clogged gutters can cause significant damage and leaks.",
       "offersTitle": "Service offers",
@@ -260,7 +260,7 @@
     },
     "contact": {
       "headTitle": "Contact us for your gutter needs",
-      "headDescription": "Need help cleaning or installing gutters? Contact our team for professional advice and support.",
+      "headDescription": "Need help cleaning or installing gutters on the South Shore? Contact our team for professional advice, fast response, and a free quote.",
       "title": "Contact Us",
       "openHours": "Opening hours",
       "openWeek": "Monday to Friday from 7:30 AM to 5:00 PM",
@@ -281,7 +281,7 @@
     },
     "faq": {
       "headTitle": "FAQ - Answers to your gutter maintenance questions",
-      "headDescription": "Browse our FAQ to get answers to common questions about gutter cleaning on the South Shore.",
+      "headDescription": "Browse our FAQ for answers to common questions about gutter cleaning, maintenance frequency, and leaf-guard installation on the South Shore.",
       "topTitle": "FAQ",
       "topText": "Welcome to our gutter maintenance FAQ! We answer common questions to help you maintain your drainage system efficiently.",
       "conclusion": [
@@ -658,7 +658,7 @@
     },
     "gestion": {
       "headTitle": "Complete guide to gutter maintenance - South Shore",
-      "headDescription": "Learn why gutter maintenance is essential to protect your home on the South Shore. Discover when and how to clean gutters, the benefits of professional service, and whether DIY is right for you.",
+      "headDescription": "Complete guide to gutter maintenance on the South Shore. Learn cleaning frequency, professional benefits, and prevention tips.",
       "accueilTitle": "A complete guide to managing your gutters.",
       "accueilSubtitle": "Effective gutter management and maintenance are critical to preserving your home's structural integrity. This article covers why gutters matter for rainwater flow, why regular maintenance is necessary, and the benefits of professional cleaning. We also review DIY limitations and key safety precautions.",
       "accueilAlt": "Gutters cleaned by Les Entretiens Grondin on the South Shore",
@@ -709,15 +709,15 @@
       "itemList": [
         {
           "text": "Everything you need to know about leaf guards",
-          "link": "https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-pare-feuilles"
+          "link": "https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-pare-feuilles/"
         },
         {
           "text": "When to clean your gutters",
-          "link": "https://entretiensgouttieresrivesud.ca/quand-nettoyer-ses-gouttieres"
+          "link": "https://entretiensgouttieresrivesud.ca/quand-nettoyer-ses-gouttieres/"
         },
         {
           "text": "Why maintain your gutters",
-          "link": "https://entretiensgouttieresrivesud.ca/pourquoi-entretenir-ses-gouttieres"
+          "link": "https://entretiensgouttieresrivesud.ca/pourquoi-entretenir-ses-gouttieres/"
         }
       ],
       "helpStart": "If you need help with gutter maintenance, feel free to",
@@ -759,7 +759,7 @@
     },
     "infoGouttieres": {
       "headTitle": "Everything about gutters: practical guide - South Shore Gutters",
-      "headDescription": "Learn everything you need to know about gutters in our practical guide: how they work, how to maintain them, available materials and styles, and how to choose the right system for your home.",
+      "headDescription": "Practical guide to gutters: how they work, maintenance tips, available materials and styles, and how to choose the right system for your home.",
       "topTitle": "Everything About Gutters",
       "topText": "Gutters are a key part of your roof and home protection, but many homeowners underestimate their role. They collect rainwater and direct it away from the house, helping prevent leaks, infiltration, and mold. Because they are often overlooked, regular cleaning is essential to keep the system working properly.",
       "whyTitle": "Why are gutters important?",
@@ -775,31 +775,31 @@
         {
           "title": "Risks of cleaning gutters yourself",
           "text": "Gutter cleaning can be dangerous, especially without the right equipment or training. Risks include falls, electric hazards, and injuries related to ladder work.",
-          "route": "/comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres/"
         },
         {
           "title": "Why hire an expert?",
           "text": "Hiring an expert ensures a complete and safe cleaning process while extending the life of your drainage system through professional maintenance.",
-          "route": "/comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres/"
         },
         {
           "title": "Cleaning gutters on your own",
           "text": "DIY gutter cleaning can lead to injuries or property damage and may still fail to provide a complete and effective result.",
-          "route": "/comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres/"
         }
       ],
       "generalInfoTitle": "General information",
       "guttersTitle": "What are the different gutter types?",
       "guttersText": "There are several gutter types, each with advantages and limitations related to durability, cost, appearance, installation, and upkeep. Whether you are considering aluminum, copper, galvanized steel, or PVC, choosing the right option for your home and budget is important.",
-      "guttersLink": "/les-differents-types-de-gouttieres",
+      "guttersLink": "/les-differents-types-de-gouttieres/",
       "guardsTitle": "What are the different leaf-guard types?",
       "guardsText": "Gutter leaf guards help prevent leaves and debris from clogging your system. They can also reduce fire risk by limiting dry buildup in gutters. Different guard types offer different levels of durability, cost, and efficiency.",
-      "guardsLink": "/tout-savoir-sur-les-pare-feuilles",
+      "guardsLink": "/tout-savoir-sur-les-pare-feuilles/",
       "bottomImageAlt": "Metal gutter guard system on the South Shore retaining tree debris"
     },
     "pareFeuilles": {
       "headTitle": "Gutter leaf guards: everything you need to know",
-      "headDescription": "Discover everything you need to know about gutter leaf guards. Our complete guide covers benefits, available guard types, and practical advice for choosing and installing the right solution.",
+      "headDescription": "Complete guide to gutter leaf guards: benefits, available types, and practical advice for choosing and installing the right solution.",
       "accueilTitle": "Benefits of gutter leaf guards: why you should install them",
       "accueilSubtitle": "Gutter leaf guards are designed to prevent leaves, branches, and other debris from clogging your gutter system. In this guide, we explore the major benefits and why installation can be a smart long-term choice.",
       "accueilAlt": "Rain falling into a gutter on Montreal South Shore",

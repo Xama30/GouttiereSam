@@ -79,7 +79,7 @@ function Realisation() {
       />
       <Header />
       <section id="P2" className="Top__ContactUs">
-        <h2>{t("nextPages.realisation.heading")}</h2>
+        <h1>{t("nextPages.realisation.heading")}</h1>
         <p>{t("nextPages.realisation.lead")}</p>
       </section>
       <NumBar />

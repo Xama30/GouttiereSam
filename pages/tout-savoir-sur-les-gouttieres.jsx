@@ -53,14 +53,14 @@ function Informations() {
             texts={get("nextPages.infoGouttieres.whyTexts", [])}
             detail="T"
             className="boxTxtIn_L"
-            route="/pourquoi-entretenir-ses-gouttieres"
+            route="/pourquoi-entretenir-ses-gouttieres/"
           />
           <BoxTxtTitleIn
             color="G"
             title={t("nextPages.infoGouttieres.whenTitle")}
             texts={get("nextPages.infoGouttieres.whenTexts", [])}
             detail="T"
-            route="/quand-nettoyer-ses-gouttieres"
+            route="/quand-nettoyer-ses-gouttieres/"
           />
         </div>
         <div className="img-container">

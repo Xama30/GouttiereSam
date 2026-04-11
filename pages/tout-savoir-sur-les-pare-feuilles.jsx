@@ -21,8 +21,8 @@ function Parefeuilles() {
   const { t, get, lang } = useNextI18n();
   const siteUrl = "https://entretiensgouttieresrivesud.ca";
   const isEnglish = lang === "en";
-  const frPath = "/tout-savoir-sur-les-pare-feuilles";
-  const enPath = "/en/tout-savoir-sur-les-pare-feuilles";
+  const frPath = "/tout-savoir-sur-les-pare-feuilles/";
+  const enPath = "/en/tout-savoir-sur-les-pare-feuilles/";
   const canonical = `${siteUrl}${isEnglish ? enPath : frPath}`;
   const ogLocale = isEnglish ? "en_CA" : "fr_CA";
 
@@ -55,7 +55,7 @@ function Parefeuilles() {
         title={t("nextPages.pareFeuilles.installationTitle")}
         texts={get("nextPages.pareFeuilles.installationTexts", [])}
         detail="T"
-        route="/nos-services"
+        route="/nos-services/"
       />
       <Soumission />
       <BoxTxt

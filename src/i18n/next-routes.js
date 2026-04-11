@@ -73,16 +73,16 @@ export function getLocalizedPath(langOrLocale, pathOrRoute = "") {
   if (Object.prototype.hasOwnProperty.call(coreRoutes, pathOrRoute)) {
     const slug = coreRoutes[pathOrRoute][lang];
     if (!slug) {
-      return lang === "en" ? "/en" : "/";
+      return lang === "en" ? "/en/" : "/";
     }
 
-    return lang === "en" ? `/en/${slug}` : `/${slug}`;
+    return lang === "en" ? `/en/${slug}/` : `/${slug}/`;
   }
 
   const cleanPath = stripPathDecorators(pathOrRoute);
 
   if (!cleanPath) {
-    return lang === "en" ? "/en" : "/";
+    return lang === "en" ? "/en/" : "/";
   }
 
   const segments = cleanPath.split("/").filter(Boolean);
@@ -91,8 +91,8 @@ export function getLocalizedPath(langOrLocale, pathOrRoute = "") {
   const localizedPath = [localizedHead, ...tail].filter(Boolean).join("/");
 
   if (!localizedPath) {
-    return lang === "en" ? "/en" : "/";
+    return lang === "en" ? "/en/" : "/";
   }
 
-  return lang === "en" ? `/en/${localizedPath}` : `/${localizedPath}`;
+  return lang === "en" ? `/en/${localizedPath}/` : `/${localizedPath}/`;
 }

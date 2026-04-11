@@ -38,7 +38,7 @@ function CityPage({ citySlug, cityData: cityDataFromProps }) {
 
   const siteUrl = "https://entretiensgouttieresrivesud.ca";
   const isEnglish = lang === "en";
-  const currentPath = `/${citySlug}`;
+  const currentPath = `/${citySlug}/`;
   const canonical = `${siteUrl}${isEnglish ? `/en${currentPath}` : currentPath}`;
   const frAlt = `${siteUrl}${currentPath}`;
   const enAlt = `${siteUrl}/en${currentPath}`;

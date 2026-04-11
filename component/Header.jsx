@@ -37,20 +37,20 @@ function Header() {
   const infoLinkDefs =
     lang === "en"
       ? [
-          { href: "/gutter-types", key: "gutterTypes" },
-          { href: "/when-to-clean-gutters", key: "whenToClean" },
-          { href: "/why-maintain-gutters", key: "whyMaintain" },
-          { href: "/how-to-clean-gutters", key: "howToClean" },
-          { href: "/gutter-maintenance-guide", key: "fullGuide" },
+          { href: "/en/gutter-types/", key: "gutterTypes" },
+          { href: "/en/when-to-clean-gutters/", key: "whenToClean" },
+          { href: "/en/why-maintain-gutters/", key: "whyMaintain" },
+          { href: "/en/how-to-clean-gutters/", key: "howToClean" },
+          { href: "/en/gutter-maintenance-guide/", key: "fullGuide" },
           { href: faqHref, key: "faq" },
         ]
       : [
-          { href: "/tout-savoir-sur-les-gouttieres", key: "gutterTypes" },
-          { href: "/tout-savoir-sur-les-pare-feuilles", key: "leafGuards" },
-          { href: "/quand-nettoyer-ses-gouttieres", key: "whenToClean" },
-          { href: "/pourquoi-entretenir-ses-gouttieres", key: "whyMaintain" },
-          { href: "/comment-nettoyer-ses-gouttieres", key: "howToClean" },
-          { href: "/gestion-de-vos-gouttieres", key: "fullGuide" },
+          { href: "/tout-savoir-sur-les-gouttieres/", key: "gutterTypes" },
+          { href: "/tout-savoir-sur-les-pare-feuilles/", key: "leafGuards" },
+          { href: "/quand-nettoyer-ses-gouttieres/", key: "whenToClean" },
+          { href: "/pourquoi-entretenir-ses-gouttieres/", key: "whyMaintain" },
+          { href: "/comment-nettoyer-ses-gouttieres/", key: "howToClean" },
+          { href: "/gestion-de-vos-gouttieres/", key: "fullGuide" },
           { href: faqHref, key: "faq" },
         ];
 

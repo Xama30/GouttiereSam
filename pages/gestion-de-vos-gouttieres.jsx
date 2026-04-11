@@ -77,11 +77,11 @@ function Gestion() {
             />
             <p className="text-conclusion">
               {t("nextPages.gestion.helpStart")}{" "}
-              <a href="https://entretiensgouttieresrivesud.ca/contactez-nous">
+              <a href="https://entretiensgouttieresrivesud.ca/contactez-nous/">
                 {t("nextPages.gestion.helpContactLabel")}
               </a>
               {t("nextPages.gestion.helpMiddle")}{" "}
-              <a href="https://entretiensgouttieresrivesud.ca/nos-services">
+              <a href="https://entretiensgouttieresrivesud.ca/nos-services/">
                 {t("nextPages.gestion.helpServicesLabel")}
               </a>
               {t("nextPages.gestion.helpEnd")}

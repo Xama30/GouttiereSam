@@ -191,52 +191,52 @@
       {
         "key": "longueuil",
         "label": "Longueuil",
-        "href": "/longueuil"
+        "href": "/longueuil/"
       },
       {
         "key": "brossard",
         "label": "Brossard",
-        "href": "/brossard"
+        "href": "/brossard/"
       },
       {
         "key": "boucherville",
         "label": "Boucherville",
-        "href": "/boucherville"
+        "href": "/boucherville/"
       },
       {
         "key": "saint-bruno",
         "label": "Saint-Bruno-de-Montarville",
-        "href": "/saint-bruno"
+        "href": "/saint-bruno/"
       },
       {
         "key": "candiac",
         "label": "Candiac",
-        "href": "/candiac"
+        "href": "/candiac/"
       },
       {
         "key": "saint-lambert",
         "label": "Saint-Lambert",
-        "href": "/saint-lambert"
+        "href": "/saint-lambert/"
       },
       {
         "key": "la-prairie",
         "label": "La Prairie",
-        "href": "/la-prairie"
+        "href": "/la-prairie/"
       },
       {
         "key": "chambly",
         "label": "Chambly",
-        "href": "/chambly"
+        "href": "/chambly/"
       },
       {
         "key": "sainte-julie",
         "label": "Sainte-Julie",
-        "href": "/sainte-julie"
+        "href": "/sainte-julie/"
       },
       {
         "key": "beloeil",
         "label": "Beloeil",
-        "href": "/beloeil"
+        "href": "/beloeil/"
       }
     ],
     "language": {
@@ -403,7 +403,7 @@
     },
     "faq": {
       "headTitle": "FAQ nettoyage de gouttières | Rive-Sud",
-      "headDescription": "Réponses sur le nettoyage de gouttières, le débouchage et les pare-feuilles pour les maisons de la Rive-Sud.",
+      "headDescription": "Trouvez les réponses à vos questions sur le nettoyage de gouttières, le débouchage et les pare-feuilles pour les maisons de la Rive-Sud.",
       "topTitle": "FAQ",
       "topText": "Bienvenue dans notre FAQ sur l'entretien des gouttières ! Nous répondons aux questions fréquentes pour vous aider à entretenir votre système de drainage efficacement.",
       "conclusion": [
@@ -500,7 +500,7 @@
     },
     "realisation": {
       "headTitle": "Réalisations nettoyage gouttières | Avant/Après",
-      "headDescription": "Découvrez nos avant/après en nettoyage de gouttières et débouchage dans les villes de la Rive-Sud.",
+      "headDescription": "Découvrez nos réalisations avant/après en nettoyage et débouchage de gouttières dans les villes de la Rive-Sud de Montréal.",
       "heading": "Réalisations Avant/Après",
       "lead": "Découvrez nos interventions réelles avant/après en nettoyage de gouttières sur la Rive-Sud, avec des résultats concrets sur différents types de propriétés.",
       "items": [
@@ -707,7 +707,7 @@
     },
     "quand": {
       "headTitle": "Quand nettoyer ses gouttières | Conseils",
-      "headDescription": "Repérez les signes d'obstruction et la fréquence idéale de nettoyage des gouttières au printemps et à l'automne.",
+      "headDescription": "Repérez les signes d'obstruction de vos gouttières et découvrez la fréquence idéale de nettoyage au printemps et à l'automne pour éviter les dégâts.",
       "accueilTitle": "Quand Nettoyer Ses Gouttières ?",
       "accueilSubtitle": "Dans la plupart des cas, le nettoyage des gouttières devrait être exécuté idéalement deux fois par année. Un entretien déficient peut engendrer de lourdes et coûteuses conséquences. Consultez cette page pour connaître les multiples raisons pour lesquelles vous avez avantage à nettoyer vos gouttières régulièrement.",
       "accueilAlt": "Gouttière qui déborde pendant la pluie",
@@ -831,15 +831,15 @@
       "itemList": [
         {
           "text": "Tout ce que vous devez savoir sur les pare-feuilles",
-          "link": "https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-pare-feuilles"
+          "link": "https://entretiensgouttieresrivesud.ca/tout-savoir-sur-les-pare-feuilles/"
         },
         {
           "text": "Quand nettoyer ses gouttières",
-          "link": "https://entretiensgouttieresrivesud.ca/quand-nettoyer-ses-gouttieres"
+          "link": "https://entretiensgouttieresrivesud.ca/quand-nettoyer-ses-gouttieres/"
         },
         {
           "text": "Pourquoi entretenir ses gouttières",
-          "link": "https://entretiensgouttieresrivesud.ca/pourquoi-entretenir-ses-gouttieres"
+          "link": "https://entretiensgouttieresrivesud.ca/pourquoi-entretenir-ses-gouttieres/"
         }
       ],
       "helpStart": "Si vous avez besoin d'aide pour l'entretien de vos gouttières, n'hésitez pas à",
@@ -881,7 +881,7 @@
     },
     "infoGouttieres": {
       "headTitle": "Tout savoir sur les gouttières | Guide pratique",
-      "headDescription": "Fonctionnement, entretien et solutions pour vos gouttières: nettoyage, débouchage et choix des matériaux.",
+      "headDescription": "Fonctionnement, entretien et solutions pour vos gouttières: guide complet sur le nettoyage, le débouchage et le choix des matériaux sur la Rive-Sud.",
       "topTitle": "Tout Savoir Sur Les Gouttières",
       "topText": "Les gouttières sont un élément important de votre toiture et de votre maison, mais les connaissez-vous vraiment ? Savez-vous comment elles fonctionnent pour protéger votre maison contre les dégâts d'eau ? Les gouttières permettent de recueillir l'eau de pluie et de la diriger loin de votre maison, évitant ainsi les dégâts d'eau, les infiltrations et les moisissures. Elles sont souvent négligées dans l'entretien de la maison, mais nettoyer régulièrement vos gouttières est essentiel pour assurer leur bon fonctionnement.",
       "whyTitle": "Pourquoi les gouttières sont-elles importantes ?",
@@ -897,26 +897,26 @@
         {
           "title": "Dangers de nettoyer ses gouttières soi-même",
           "text": "Le nettoyage des gouttières peut être dangereux, en particulier si vous n'êtes pas équipé de l'équipement approprié ou si vous n'avez pas les compétences nécessaires. Il y a des risques de chutes, d'électrocution ou de blessures liées à l'utilisation d'échelles et d'autres équipements.",
-          "route": "/comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres/"
         },
         {
           "title": "Pourquoi faire appel à un expert?",
           "text": "Engager un expert pour le nettoyage de vos gouttières garantit un nettoyage complet et en toute sécurité, ainsi qu'un entretien professionnel pour prolonger la durée de vie de votre système de drainage.",
-          "route": "/comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres/"
         },
         {
           "title": "Nettoyer ses gouttières soi-même",
           "text": "Nettoyer soi-même ses gouttières peut être dangereux et causer des blessures ou des dégâts matériels, en plus de ne pas garantir un nettoyage complet et efficace.",
-          "route": "/comment-nettoyer-ses-gouttieres"
+          "route": "/comment-nettoyer-ses-gouttieres/"
         }
       ],
       "generalInfoTitle": "Informations générales",
       "guttersTitle": "Quels sont les différents types de gouttières? ",
       "guttersText": " Il existe différents types de gouttières, chacun ayant ses avantages et ses inconvénients en termes de durabilité, de coûts, d'esthétique et de facilité d'installation et d'entretien. Que vous cherchiez une gouttière en aluminium, en cuivre, en acier galvanisé ou en PVC, il est important de choisir le type de gouttière qui convient le mieux à votre maison et à votre budget.",
-      "guttersLink": "/les-differents-types-de-gouttieres",
+      "guttersLink": "/les-differents-types-de-gouttieres/",
       "guardsTitle": "Quels sont les différents types de pare-feuilles? ",
       "guardsText": "Les pare-feuilles de gouttière sont des accessoires utiles qui empêchent les feuilles, les débris et autres saletés de boucher vos gouttières. Ils peuvent également réduire le risque d'incendie en empêchant les feuilles sèches et autres matières combustibles de s'accumuler dans vos gouttières. Il existe différents types de pare-feuilles de gouttière, chacun avec ses propres avantages et inconvénients en termes de durabilité, de coûts et d'efficacité.",
-      "guardsLink": "/tout-savoir-sur-les-pare-feuilles",
+      "guardsLink": "/tout-savoir-sur-les-pare-feuilles/",
       "bottomImageAlt": "Vue rapprochée d'un protège-gouttière métallique en place"
     },
     "pareFeuilles": {

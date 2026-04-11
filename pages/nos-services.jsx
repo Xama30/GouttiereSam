@@ -62,7 +62,7 @@ const Index = () => {
             title={t("nextPages.services.guardTitle")}
             text={t("nextPages.services.guardText")}
             detail="T"
-            link="/tout-savoir-sur-les-pare-feuilles"
+            link="/tout-savoir-sur-les-pare-feuilles/"
           />
         </section>
         <NumBar />

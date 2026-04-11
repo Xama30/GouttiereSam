@@ -24,7 +24,7 @@ function normalizePath(inputPath) {
     return "/";
   }
 
-  return squashed.replace(/\/$/, "");
+  return squashed.endsWith("/") ? squashed : `${squashed}/`;
 }
 
 function stripEnglishPrefix(path) {
@@ -58,14 +58,14 @@ function localizePath(path, locale) {
   const segments = basePath.split("/").filter(Boolean);
 
   if (segments.length === 0) {
-    return locale === "en" ? "/en" : "/";
+    return locale === "en" ? "/en/" : "/";
   }
 
   const [first, ...rest] = segments;
   const localizedFirst = translateSegment(first, locale);
   const localized = [localizedFirst, ...rest].join("/");
 
-  return locale === "en" ? `/en/${localized}` : `/${localized}`;
+  return locale === "en" ? `/en/${localized}/` : `/${localized}/`;
 }
 
 function toAbsoluteUrl(path) {
