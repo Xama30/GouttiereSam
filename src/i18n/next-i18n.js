@@ -21,10 +21,7 @@ function interpolate(template, vars) {
 }
 
 export function resolveLang(locale) {
-  const normalizedLocale = String(locale || "").toLowerCase();
-  return normalizedLocale === "en" || normalizedLocale.startsWith("en-")
-    ? "en"
-    : "fr";
+  return locale === "en" ? "en" : "fr";
 }
 
 export function getI18n(lang = defaultLang) {
